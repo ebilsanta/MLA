@@ -45,5 +45,21 @@ It should take 5 minutes or so...
     - Mix1
     - Mix2
 
+* If you need to generate different names, you can get_modified_filename (line 77)
+  * The files are grouped by voice type at this stage, so edit the values of the output_mapping for different filenames
+```
+def get_modified_filename(source_filename):
+    output_mapping = {
+        "Bass": "bass",
+        "Tenor": "vocals",
+        "Alto": "drums",
+        "Soprano": "other"
+    }
+    parts = source_filename.split(".")[0].split('/')
+    voice_type = parts[-2]
+    modified_name = output_mapping[voice_type] 
+    return modified_name
+```
+
 
 
