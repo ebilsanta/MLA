@@ -71,8 +71,51 @@ def get_modified_filename(source_filename):
     modified_name = output_mapping[voice_type] 
     return modified_name + ".wav"
 
-def generate_train_test(input_dir, output_dir):
+def generate_test(input_dir, output_dir):
     source_folders = ['alto', 'tenor', 'bass', 'soprano']
+    test_folder = os.path.join(output_dir, "test")
+    mix_no = 1
+    os.makedirs(test_folder, exist_ok=True)
+    for song_folder in os.listdir(input_dir):
+        song_path = os.path.join(input_dir, song_folder)
+
+        if not os.path.isdir(song_path):
+            continue
+
+        combined_audio = AudioSegment.silent(duration=0)  # Create an empty audio segment
+        
+        # Generate all combinations of .wav files
+        for source_folder in source_folders:
+            source_folder_path = os.path.join(song_path, source_folder)
+            voice_files = os.listdir(source_folder_path)
+            for source_file in voice_files:
+                if "1" not in source_file:
+                    continue
+                source_file_path = os.path.join(source_folder_path, source_file)
+
+                mix_folder = os.path.join(test_folder, f"mix{mix_no}")
+                os.makedirs(mix_folder, exist_ok=True)
+                new_file_path = os.path.join(mix_folder, get_modified_filename(source_file_path))
+
+                source_audio = AudioSegment.from_file(source_file_path)
+
+                # Use the parameters of the first audio file for the combined file
+                if source_folder == source_folders[0]:
+                    combined_audio = source_audio
+
+                else:
+                    combined_audio = combined_audio.overlay(source_audio)
+
+                # copy the source track to the mix folder and delete it
+                shutil.copy(source_file_path, new_file_path)
+                shutil.os.remove(source_file_path)
+        
+        combined_audio.export(os.path.join(mix_folder, 'mixture.wav'), format="wav")
+        mix_no += 1
+
+def generate_train(input_dir, output_dir):
+    source_folders = ['alto', 'tenor', 'bass', 'soprano']
+    train_folder = os.path.join(output_dir, "train")
     for song_folder in os.listdir(input_dir):
         song_path = os.path.join(input_dir, song_folder)
 
@@ -84,7 +127,7 @@ def generate_train_test(input_dir, output_dir):
 
         # Create a mix folder for each combination
         for idx, combination in enumerate(combinations, start=1):
-            mix_folder = os.path.join(output_dir, f"mix{idx}")
+            mix_folder = os.path.join(train_folder, f"mix{idx}")
             os.makedirs(mix_folder, exist_ok=True)
 
             # Combine the selected .wav files
@@ -116,8 +159,10 @@ def preprocess_csd_like_musdb(raw_csd_dir, output_dir):
     print("-----------------grouping audio by song and voice type-----------------")
     group_audios(temp_dir, temp_dir_2)
     shutil.rmtree(temp_dir)
-    print("-----------------generating train tests-----------------")
-    generate_train_test(temp_dir_2, output_dir)
+    print("-----------------generating test-----------------")
+    generate_test(temp_dir_2, output_dir)
+    print("-----------------generating train-----------------")
+    generate_train(temp_dir_2, output_dir)
     shutil.rmtree(temp_dir_2)
 
 if __name__ == "__main__":
