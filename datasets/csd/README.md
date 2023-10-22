@@ -12,6 +12,23 @@ pip install pydub
 pip install soundfile
 ```
 
+* If you need to generate different names, you can change get_modified_filename (line 62)
+  * The files are grouped by voice type at this stage, so edit the **values** of the output_mapping for different filenames
+  * Additionally, you will have to change to split by "\\" if you're on Windows
+```
+def get_modified_filename(source_filename):
+    output_mapping = {
+        "bass": "bass",
+        "tenor": "vocals",
+        "alto": "drums",
+        "soprano": "other"
+    }
+    parts = source_filename.split('/') # need to change to '\\' for windows
+    voice_type = parts[-2]
+    modified_name = output_mapping[voice_type] 
+    return modified_name + ".wav"
+```
+
 * Check folder locations specified at the bottom of `preprocess_csd_like_musdb.py`
 
 ```
@@ -46,22 +63,6 @@ It should take 5 minutes or so...
   - train
     - Mix1
     - Mix2
-
-* If you need to generate different names, you can get_modified_filename (line 62)
-  * The files are grouped by voice type at this stage, so edit the values of the output_mapping for different filenames
-```
-def get_modified_filename(source_filename):
-    output_mapping = {
-        "bass": "bass",
-        "tenor": "vocals",
-        "alto": "drums",
-        "soprano": "other"
-    }
-    parts = source_filename.split('/')
-    voice_type = parts[-2]
-    modified_name = output_mapping[voice_type] 
-    return modified_name + ".wav"
-```
 
 
 
