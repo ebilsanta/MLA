@@ -170,8 +170,9 @@ def generate_train_tests(input_dir, mix_output_dir_base):
 
 
 def preprocess_esmuc_like_musdb(raw_esmuc_dir, output_dir):
-    temp_dir = "temp"
-    temp_2_dir = "temp_2"
+    print("********** start generating test/train for esmuc **********")
+    temp_dir = "esmuc_temp"
+    temp_2_dir = "esmuc_temp_2"
     print("----------------------------filtering wav files----------------------------")
     filter_wav_files(raw_esmuc_dir, temp_dir)
     print("----------------------------grouping audio in temporary folder----------------------------")
