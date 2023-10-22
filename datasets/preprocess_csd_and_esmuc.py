@@ -24,7 +24,7 @@ def combine_mixes(input_folders, output_folder):
             for file in files:
                 if file.endswith('.wav'):
                     # Copy the mix files to the output folder
-                    shutil.copy(os.path.join(subdir, file), output_subdir)
+                    shutil.copy2(os.path.join(subdir, file), output_subdir)
             mix_number += 1    
 
 def run_io_tasks_in_parallel(tasks):

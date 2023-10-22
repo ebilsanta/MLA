@@ -28,7 +28,7 @@ def mono_to_stereo(input_file, output_file):
     # Save the stereo wav file
     wavfile.write(output_file, sample_rate, stereo_data)
 
-def generate_test(input_dir, output_dir, convert_to_stereo=False):
+def generate_test(input_dir, output_dir):
     source_folders = ['alto', 'tenor', 'bass', 'soprano']
     test_folder = os.path.join(output_dir, "test")
     mix_no = 1
@@ -49,8 +49,6 @@ def generate_test(input_dir, output_dir, convert_to_stereo=False):
                 if "1" not in source_file:
                     continue
                 source_file_path = os.path.join(source_folder_path, source_file)
-                if convert_to_stereo:
-                    mono_to_stereo(source_file_path, source_file_path)
 
                 mix_folder = os.path.join(test_folder, f"mix{mix_no}")
                 os.makedirs(mix_folder, exist_ok=True)
@@ -66,13 +64,13 @@ def generate_test(input_dir, output_dir, convert_to_stereo=False):
                     combined_audio = combined_audio.overlay(source_audio)
 
                 # copy the source track to the mix folder and delete it
-                shutil.copy(source_file_path, new_file_path)
+                shutil.copy2(source_file_path, new_file_path)
                 shutil.os.remove(source_file_path)
         
         combined_audio.export(os.path.join(mix_folder, 'mixture.wav'), format="wav")
         mix_no += 1
 
-def generate_train(input_dir, output_dir, convert_to_stereo=False):
+def generate_train(input_dir, output_dir):
     source_folders = ['alto', 'tenor', 'bass', 'soprano']
     train_folder = os.path.join(output_dir, "train")
     for song_folder in os.listdir(input_dir):
@@ -94,8 +92,6 @@ def generate_train(input_dir, output_dir, convert_to_stereo=False):
 
             for source_folder, source_file in zip(source_folders, combination):
                 source_file_path = os.path.join(song_path, source_folder, source_file)
-                if convert_to_stereo:
-                    mono_to_stereo(source_file_path, source_file_path)
                 source_audio = AudioSegment.from_file(source_file_path)
 
                 # Use the parameters of the first audio file for the combined file
@@ -107,7 +103,7 @@ def generate_train(input_dir, output_dir, convert_to_stereo=False):
 
                 # Copy individual .wav files
                 modified_filename = get_modified_filename(source_file_path)
-                shutil.copy(source_file_path, os.path.join(mix_folder, modified_filename))
+                shutil.copy2(source_file_path, os.path.join(mix_folder, modified_filename))
 
             # Save the combined audio as mixture.wav
             combined_audio.export(os.path.join(mix_folder, 'mixture.wav'), format="wav")
@@ -131,5 +127,5 @@ if __name__ == "__main__":
     # path to raw csd dataset
     root_dir = "ChoralSingingDataset"
     output_dir = "processed_csd"
-    preprocess_csd_like_musdb(root_dir, output_dir, convert_to_stereo=True)
+    preprocess_csd_like_musdb(root_dir, output_dir, convert_to_stereo=False)
     
