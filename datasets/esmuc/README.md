@@ -11,6 +11,23 @@ for eg.
 pip install pydub
 ```
 
+* If you need to generate different names, you can get_modified_filename (line 77)
+  * The files are grouped by voice type at this stage, so edit the values of the output_mapping for different filenames
+  * Additionally, if you're running on Windows, you need to change to split by "\\"
+```
+def get_modified_filename(source_filename):
+    output_mapping = {
+        "Bass": "bass",
+        "Tenor": "vocals",
+        "Alto": "drums",
+        "Soprano": "other"
+    }
+    parts = source_filename.split(".")[0].split('/') # need to change to '\\' for windows
+    voice_type = parts[-2]
+    modified_name = output_mapping[voice_type] 
+    return modified_name
+```
+
 * Check folder locations specified at the bottom of `preprocess_esmuc_like_musdb.py`
 
 ```
@@ -45,21 +62,6 @@ It should take 5 minutes or so...
     - Mix1
     - Mix2
 
-* If you need to generate different names, you can get_modified_filename (line 77)
-  * The files are grouped by voice type at this stage, so edit the values of the output_mapping for different filenames
-```
-def get_modified_filename(source_filename):
-    output_mapping = {
-        "Bass": "bass",
-        "Tenor": "vocals",
-        "Alto": "drums",
-        "Soprano": "other"
-    }
-    parts = source_filename.split(".")[0].split('/')
-    voice_type = parts[-2]
-    modified_name = output_mapping[voice_type] 
-    return modified_name
-```
 
 
 

@@ -2,3 +2,4 @@
 /datasets/csd/ChoralSingingDataset
 /datasets/esmuc/processed_esmuc
 /datasets/esmuc/EsmucChoirDataset_v1.0.0
+__pycache__/
