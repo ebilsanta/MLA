@@ -1,7 +1,4 @@
 from pydub import AudioSegment
-from scipy.io import wavfile
-from scipy.signal import resample
-
 import os
 import shutil
 
@@ -84,34 +81,20 @@ def get_modified_filename(source_filename):
         "Alto": "alto",
         "Soprano": "soprano"
     }
-    print(source_filename)
     parts = source_filename.split(".")[0].split('/') # need to change to '\\' for windows
     voice_type = parts[-2]
     modified_name = output_mapping[voice_type] 
     return modified_name
 
-def convert_sample_rate(input_path, output_path, target_sample_rate):
-    # Load the audio file
-    sample_rate, audio_data = wavfile.read(input_path)
 
-    # Calculate the resampling factor
-    resample_factor = target_sample_rate / sample_rate
-
-    # Resample the audio data
-    resampled_audio = resample(audio_data, int(len(audio_data) * resample_factor))
-
-    # Save the resampled audio as a new WAV file
-    wavfile.write(output_path, target_sample_rate, resampled_audio.astype('int16'))
-
-
-def generate_mixes(source_folders, combination, mix_folder, mix_count):
+def generate_mixes(source_folders, combination, mix_folder):
     combined_audio = AudioSegment.silent(duration=0)
 
     source_files = []  # Keep track of the original audio files
     for source_folder, source_file in zip(source_folders, combination):
         # source_file_path = os.path.join(input_dir, source_folder, source_file)
         source_file_path = os.path.join(source_folder, source_file)
-        source_audio = AudioSegment.from_file(source_file_path).set_frame_rate(44000) # change frame rate from 22 to 44 kHz
+        source_audio = AudioSegment.from_file(source_file_path)
 
         source_files.append((source_file_path,source_audio))  # Keep track of the original audio files
 
@@ -122,10 +105,8 @@ def generate_mixes(source_folders, combination, mix_folder, mix_count):
             combined_audio = combined_audio.overlay(source_audio)
 
     # Save the mixed audio
-    mix_file_path = os.path.join(mix_folder, "mixture")
-    os.makedirs(mix_file_path, exist_ok=True)
-    mix_file_path_name = os.path.join(mix_file_path, f'mixture{mix_count}.wav')
-    combined_audio.export(mix_file_path_name, format="wav")
+    mix_file_path = os.path.join(mix_folder, "mixture.wav")
+    combined_audio.export(mix_file_path, format="wav")
 
     # Copy original audio files to the mix folder with their labels
     for i, (source_file_path, source_audio) in enumerate(source_files):
@@ -179,10 +160,10 @@ def generate_train_tests(input_dir, mix_output_dir_base):
                     # Create Mix folders and generate mixed audio
                     for combination in combinations:
                         
-                        # mix_folder = os.path.join(mix_output_dir, f"Mix{mix_folder_counter}")
-                        # os.makedirs(mix_folder, exist_ok=True)
+                        mix_folder = os.path.join(mix_output_dir, f"Mix{mix_folder_counter}")
+                        os.makedirs(mix_folder, exist_ok=True)
 
-                        generate_mixes(source_folders, combination, mix_output_dir, mix_folder_counter)
+                        generate_mixes(source_folders, combination, mix_folder)
 
                         mix_folder_counter += 1
                     break

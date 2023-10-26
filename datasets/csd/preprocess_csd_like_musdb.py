@@ -4,7 +4,7 @@ import shutil
 from scipy.io import wavfile
 import numpy as np
 from pydub import AudioSegment
-from .utils import copy_non_wav_files, group_audios
+from utils import copy_non_wav_files, group_audios
 
 def get_modified_filename(source_filename):
     output_mapping = {
@@ -108,7 +108,7 @@ def generate_train(input_dir, output_dir):
             # Save the combined audio as mixture.wav
             combined_audio.export(os.path.join(mix_folder, 'mixture.wav'), format="wav")
 
-def preprocess_csd_like_musdb(raw_csd_dir, output_dir):
+def preprocess_csd_like_musdb(raw_csd_dir, output_dir, convert_to_stereo=False):
     print("**************** start generating test/train for csd ****************")
     temp_dir = "./csd_temp"
     temp_dir_2 = "./csd_temp_2"
@@ -118,14 +118,14 @@ def preprocess_csd_like_musdb(raw_csd_dir, output_dir):
     group_audios(temp_dir, temp_dir_2)
     shutil.rmtree(temp_dir)
     print("-----------------generating test-----------------")
-    generate_test(temp_dir_2, output_dir)
+    generate_test(temp_dir_2, output_dir, convert_to_stereo=convert_to_stereo)
     print("-----------------generating train-----------------")
-    generate_train(temp_dir_2, output_dir)
+    generate_train(temp_dir_2, output_dir, convert_to_stereo=convert_to_stereo)
     shutil.rmtree(temp_dir_2)
 
 if __name__ == "__main__":
     # path to raw csd dataset
     root_dir = "ChoralSingingDataset"
     output_dir = "processed_csd"
-    preprocess_csd_like_musdb(root_dir, output_dir)
+    preprocess_csd_like_musdb(root_dir, output_dir, convert_to_stereo=False)
     
