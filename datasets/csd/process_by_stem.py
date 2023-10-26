@@ -128,6 +128,6 @@ def preprocess_by_stem(input_dir, output_dir):
 if __name__ == "__main__":
     # path to raw csd dataset
     root_dir = "ChoralSingingDataset"
-    output_dir = "processed_csd"
+    output_dir = "processed_csd_jukebox"
     preprocess_by_stem(root_dir, output_dir)
     
