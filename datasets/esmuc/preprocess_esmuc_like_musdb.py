@@ -93,7 +93,7 @@ def generate_mixes(source_folders, combination, mix_folder):
     for source_folder, source_file in zip(source_folders, combination):
         # source_file_path = os.path.join(input_dir, source_folder, source_file)
         source_file_path = os.path.join(source_folder, source_file)
-        source_audio = AudioSegment.from_file(source_file_path).set_frame_rate(44000)
+        source_audio = AudioSegment.from_file(source_file_path).set_frame_rate(44100)
 
         source_files.append((source_file_path,source_audio))  # Keep track of the original audio files
 
