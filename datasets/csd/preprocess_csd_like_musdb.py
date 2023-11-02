@@ -73,6 +73,7 @@ def generate_test(input_dir, output_dir):
 def generate_train(input_dir, output_dir):
     source_folders = ['alto', 'tenor', 'bass', 'soprano']
     train_folder = os.path.join(output_dir, "train")
+    mix_number = 1
     for song_folder in os.listdir(input_dir):
         song_path = os.path.join(input_dir, song_folder)
 
@@ -84,7 +85,7 @@ def generate_train(input_dir, output_dir):
 
         # Create a mix folder for each combination
         for idx, combination in enumerate(combinations, start=1):
-            mix_folder = os.path.join(train_folder, f"mix{idx}")
+            mix_folder = os.path.join(train_folder, f"mix{mix_number}")
             os.makedirs(mix_folder, exist_ok=True)
 
             # Combine the selected .wav files
@@ -107,6 +108,7 @@ def generate_train(input_dir, output_dir):
 
             # Save the combined audio as mixture.wav
             combined_audio.export(os.path.join(mix_folder, 'mixture.wav'), format="wav")
+            mix_number += 1
 
 def preprocess_csd_like_musdb(raw_csd_dir, output_dir):
     print("**************** start generating test/train for csd ****************")

@@ -158,7 +158,7 @@ def generate_train_tests(input_dir, mix_output_dir_base):
 
                     # Create Mix folders and generate mixed audio
                     for combination in combinations:
-                        
+                        print(combination)
                         mix_folder = os.path.join(mix_output_dir, f"Mix{mix_folder_counter}")
                         os.makedirs(mix_folder, exist_ok=True)
 
@@ -179,7 +179,7 @@ def preprocess_esmuc_like_musdb(raw_esmuc_dir, output_dir):
     shutil.rmtree(temp_dir)
     print("----------------------------separating into train and test folders----------------------------")
     generate_train_tests(temp_2_dir, output_dir)
-    shutil.rmtree(temp_2_dir)
+    # shutil.rmtree(temp_2_dir)
 
 if __name__ == "__main__":
     raw_esmuc_dataset = "./EsmucChoirDataset_v1.0.0"
