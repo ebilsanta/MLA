@@ -4,7 +4,7 @@ import shutil
 from scipy.io import wavfile
 import numpy as np
 from pydub import AudioSegment
-from .utils import copy_non_wav_files, group_audios
+from utils import copy_non_wav_files, group_audios
 
 def get_modified_filename(source_filename):
     output_mapping = {

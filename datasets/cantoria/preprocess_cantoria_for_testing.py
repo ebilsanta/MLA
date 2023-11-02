@@ -1,7 +1,8 @@
 import os
 import shutil
 
-VOICE_TYPE_MAPPING = {'A': 'alto', 'S': 'soprano', 'T': 'tenor', 'B': 'bass', 'M': 'mixture'}
+# edit this if you need to change the names of the voice files
+VOICE_TYPE_MAPPING = {'A': 'drums', 'S': 'other', 'T': 'vocals', 'B': 'bass', 'M': 'mixture'}
 
 def process_audio_files(source_folder, output_folder):
     # Create the output folder if it doesn't exist
@@ -31,11 +32,10 @@ def process_audio_files(source_folder, output_folder):
                 os.makedirs(mix_folder)
 
             # Copy the file to the appropriate folder in the output directory
-            shutil.copy(os.path.join(audio_folder, filename), os.path.join(mix_folder, f'{voice_type}.wav'))
-
+            shutil.copy2(os.path.join(audio_folder, filename), os.path.join(mix_folder, f'{voice_type}.wav'))
 
     print(f'Processed audio files from {source_folder} to {output_folder}')
 
 # Example usage:
 if __name__ == '__main__':
-    process_audio_files('CantoriaDataset_v1.0.0', 'processed_cantoria_for_testing')
+    process_audio_files('CantoriaDataset_v1.0.0', 'processed_cantoria_for_testing_bsrnn')
