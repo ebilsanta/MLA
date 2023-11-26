@@ -1,0 +1,24 @@
+You are allocated NVIDIA GeForce RTX 3090 on toga
+You are using GPU 1
+start
+Trained
+Restored from logs/vqvae_bass_b6/checkpoint_step_80001.pth.tar
+1. model restored
+file:  0
+unweighted sdr loss: 0.006851463578641415
+unweighted sdr loss: 0.0029968167655169964
+unweighted sdr loss: 0.008732863701879978
+unweighted sdr loss: 0.010658672079443932
+/common/home/projectgrps/IS460/IS460G10/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/functional.py:633: UserWarning: stft will soon require the return_complex parameter be given for real inputs, and will further require that return_complex=True in a future PyTorch release. (Triggered internally at /opt/conda/conda-bld/pytorch_1670525541035/work/aten/src/ATen/native/SpectralOps.cpp:801.)
+  normalized, onesided, return_complex)
+Job ID: 32937
+Cluster: crimson
+User/Group: IS460G10/IS460G10
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:15
+CPU Efficiency: 6.47% of 00:03:52 core-walltime
+Job Wall-clock time: 00:00:58
+Memory Utilized: 306.00 MB
+Memory Efficiency: 1.87% of 16.00 GB

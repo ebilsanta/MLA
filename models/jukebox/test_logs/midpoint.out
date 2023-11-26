@@ -1,0 +1,47 @@
+You are allocated NVIDIA GeForce RTX 3090 on aloha
+You are using GPU 0
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+1
+Using cuda True
+1
+0: Found 3 files. Getting durations
+0: self.sr=44100, min: 9, max: inf
+0: Keeping 3 of 3 files
+Traceback (most recent call last):
+  File "unmix/train.py", line 338, in <module>
+    fire.Fire(run)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/fire/core.py", line 127, in Fire
+    component_trace = _Fire(component, args, context, name)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/fire/core.py", line 366, in _Fire
+    component, remaining_args)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/fire/core.py", line 542, in _CallCallable
+    result = fn(*varargs, **kwargs)
+  File "unmix/train.py", line 291, in run
+    data_processor = DataProcessor(hps)
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix/data/data_processor.py", line 31, in __init__
+    self.dataset, hps, duration=duration)
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix/utils/audio_utils.py", line 31, in calculate_bandwidth
+    x = dataset[idx]
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix/data/files_dataset.py", line 115, in __getitem__
+    return self.get_item(item)
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix/data/files_dataset.py", line 108, in get_item
+    index, offset = self.get_index_offset(item)
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix/data/files_dataset.py", line 63, in get_index_offset
+    assert 0 <= midpoint < self.cumsum[-1], f'Midpoint {midpoint} of item beyond total length {self.cumsum[-1]}'
+AssertionError: Midpoint 19102901 of item beyond total length 13329853
+srun: error: aloha: task 0: Exited with exit code 1
+srun: Terminating StepId=30075.1
+Job ID: 30075
+Cluster: crimson
+User/Group: IS460G4/IS460G4
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:11
+CPU Efficiency: 15.28% of 00:01:12 core-walltime
+Job Wall-clock time: 00:00:18
+Memory Utilized: 3.36 MB
+Memory Efficiency: 0.02% of 16.00 GB

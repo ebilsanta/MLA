@@ -1,0 +1,1 @@
+unmix/train.py --hps=vqvae --name=vqvae_bass_b6 --sr=44100 --sample_length=393216 --bs=6 --audio_files_dir=new_data/mixture --stem_audio_dir=new_data/bass --labels=False --train --aug_shift --aug_blend

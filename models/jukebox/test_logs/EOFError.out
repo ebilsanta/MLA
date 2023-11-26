@@ -1,0 +1,56 @@
+You are allocated NVIDIA GeForce RTX 3090 on aloha
+You are using GPU 3
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+--2023-10-22 19:33:47--  https://openaipublic.azureedge.net/unmix_encoder/models/5b/vqvae.pth.tar
+Resolving openaipublic.azureedge.net (openaipublic.azureedge.net)... 13.107.213.59, 13.107.246.59, 2620:1ec:bdf::59, ...
+Connecting to openaipublic.azureedge.net (openaipublic.azureedge.net)|13.107.213.59|:443... connected.
+HTTP request sent, awaiting response... 400 Bad Request
+2023-10-22 19:33:48 ERROR 400: Bad Request.
+
+Using cuda True
+0: Found 3 files. Getting durations
+0: self.sr=44100, min: 9, max: inf
+0: Keeping 3 of 3 files
+{'l2': 0.028719452536929663, 'l1': 0.13480043411254883, 'spec': 4944.99951171875}
+Creating Data Loader
+0: Train 9 samples. Test 2 samples
+0: Train sampler: <torch.utils.data.distributed.DistributedSampler object at 0x7f8e5221ef10>
+0: Train loader: 4
+Downloading from azure
+Running  wget -O /common/home/projectgrps/IS460/IS460G4/.cache/unmix_encoder/models/5b/vqvae.pth.tar https://openaipublic.azureedge.net/unmix_encoder/models/5b/vqvae.pth.tar
+Traceback (most recent call last):
+  File "unmix_encoder/train.py", line 430, in <module>
+    fire.Fire(run)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/fire/core.py", line 127, in Fire
+    component_trace = _Fire(component, args, context, name)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/fire/core.py", line 366, in _Fire
+    component, remaining_args)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/fire/core.py", line 542, in _CallCallable
+    result = fn(*varargs, **kwargs)
+  File "unmix_encoder/train.py", line 380, in run
+    encoder = make_encoder(hps, device)
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix_encoder/make_models.py", line 179, in make_encoder
+    hps, vqvae, 'https://openaipublic.azureedge.net/unmix_encoder/models/5b/vqvae.pth.tar')
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix_encoder/make_models.py", line 78, in restore_model
+    checkpoint = load_checkpoint(checkpoint_path)
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix_encoder/make_models.py", line 39, in load_checkpoint
+    checkpoint = t.load(restore, map_location=t.device('cpu'))
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/serialization.py", line 608, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/serialization.py", line 777, in _legacy_load
+    magic_number = pickle_module.load(f, **pickle_load_args)
+EOFError: Ran out of input
+srun: error: aloha: task 0: Exited with exit code 1
+srun: Terminating StepId=30551.1
+Job ID: 30551
+Cluster: crimson
+User/Group: IS460G4/IS460G4
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:14
+CPU Efficiency: 15.91% of 00:01:28 core-walltime
+Job Wall-clock time: 00:00:22
+Memory Utilized: 3.49 MB
+Memory Efficiency: 0.02% of 16.00 GB

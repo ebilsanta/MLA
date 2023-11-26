@@ -1,0 +1,97 @@
+You are allocated NVIDIA GeForce RTX 3090 on lava
+You are using GPU 1
+start
+Trained
+logs/vqvae_bass_b6/checkpoint_step_60001.pth.tar
+logs/encoder_bass_b6/checkpoint_step_80001.pth.tar
+Restored from logs/vqvae_bass_b6/checkpoint_step_60001.pth.tar
+1. model restored
+2. model restored
+file:  0
+file:  1
+file:  2
+file:  3
+file:  4
+file:  5
+file:  6
+file:  7
+file:  8
+file:  9
+file:  10
+file:  11
+file:  12
+file:  13
+file:  14
+file:  15
+file:  16
+file:  17
+file:  18
+file:  19
+file:  20
+file:  21
+file:  22
+file:  23
+file:  24
+file:  25
+file:  26
+file:  27
+file:  28
+file:  29
+file:  30
+file:  31
+file:  32
+file:  33
+file:  34
+file:  35
+file:  36
+file:  37
+file:  38
+file:  39
+file:  40
+file:  41
+file:  42
+file:  43
+file:  44
+file:  45
+file:  46
+file:  47
+file:  48
+file:  49
+file:  50
+file:  51
+file:  52
+file:  53
+file:  54
+file:  55
+file:  56
+file:  57
+file:  58
+file:  59
+file:  60
+file:  61
+file:  62
+file:  63
+file:  64
+file:  65
+file:  66
+file:  67
+file:  68
+file:  69
+file:  70
+file:  71
+file:  72
+file:  73
+file:  74
+/common/home/projectgrps/IS460/IS460G10/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/functional.py:633: UserWarning: stft will soon require the return_complex parameter be given for real inputs, and will further require that return_complex=True in a future PyTorch release. (Triggered internally at /opt/conda/conda-bld/pytorch_1670525541035/work/aten/src/ATen/native/SpectralOps.cpp:801.)
+  normalized, onesided, return_complex)
+Job ID: 32692
+Cluster: crimson
+User/Group: IS460G10/IS460G10
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:03:06
+CPU Efficiency: 34.70% of 00:08:56 core-walltime
+Job Wall-clock time: 00:02:14
+Memory Utilized: 2.67 GB
+Memory Efficiency: 16.71% of 16.00 GB

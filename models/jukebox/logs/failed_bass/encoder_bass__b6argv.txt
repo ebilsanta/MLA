@@ -1,0 +1,1 @@
+unmix_encoder/train.py --hps=vqvae --name=encoder_bass__b6 --sr=44100 --sample_length=393216 --bs=6 --audio_files_dir=unmix/data/mixture --labels=False --train --aug_shift --aug_blend --encoder=True --channel=_1 --restore_vqvae=/common/home/projectgrps/IS460/IS460G10/jukebox/logs/vqvae_bass_b6/checkpoint_step_20001.pth.tar

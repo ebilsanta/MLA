@@ -1,0 +1,115 @@
+You are allocated NVIDIA GeForce RTX 3090 on aloha
+You are using GPU 2
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+1
+Using cuda True
+1
+0: Found 3 files. Getting durations
+0: self.sr=44100, min: 9, max: inf
+0: Keeping 3 of 3 files
+{'l2': 0.007233235359267522, 'l1': 0.051138536602843045, 'spec': 2445.5114889705883}
+Creating Data Loader
+0: Train 29 samples. Test 4 samples
+0: Train sampler: <torch.utils.data.distributed.DistributedSampler object at 0x7f24241f1890>
+0: Train loader: 7
+Model from scratch
+0: Loading vqvae in train mode
+0: Reseting bottleneck emas
+Parameters VQVAE:900033
+Downloading from azure
+Restored from /common/home/projectgrps/IS460/IS460G4/.cache/jukebox/models/5b/vqvae.pth.tar
+Number of gpus:
+1
+Logging to logs/vqvae_drums_b4
+Epoch:  -1 / 10000
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+0/7 [00:00<?, ?it/s]0/7 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "unmix/train.py", line 338, in <module>
+    fire.Fire(run)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/fire/core.py", line 127, in Fire
+    component_trace = _Fire(component, args, context, name)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/fire/core.py", line 366, in _Fire
+    component, remaining_args)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/fire/core.py", line 542, in _CallCallable
+    result = fn(*varargs, **kwargs)
+  File "unmix/train.py", line 315, in run
+    scalar, ema, logger, metrics, data_processor, hps)
+  File "unmix/train.py", line 204, in train
+    x_out, loss, _metrics = model(x, **forw_kwargs)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 150, in forward
+    return self.module(*inputs[0], **kwargs[0])
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix/vqvae/vqvae.py", line 175, in forward
+    x_out = encoder(x_in)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix/vqvae/encdec.py", line 93, in forward
+    x = level_block(x)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix/vqvae/encdec.py", line 33, in forward
+    return self.model(x)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 202, in forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: cuDNN error: CUDNN_STATUS_MAPPING_ERROR
+srun: error: aloha: task 0: Exited with exit code 1
+srun: Terminating StepId=30425.1
+Job ID: 30425
+Cluster: crimson
+User/Group: IS460G4/IS460G4
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:18
+CPU Efficiency: 14.52% of 00:02:04 core-walltime
+Job Wall-clock time: 00:00:31
+Memory Utilized: 12.05 MB
+Memory Efficiency: 0.07% of 16.00 GB

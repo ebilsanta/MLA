@@ -1,0 +1,27 @@
+You are allocated NVIDIA GeForce RTX 3090 on aloha
+You are using GPU 0
+Traceback (most recent call last):
+  File "unmix/train.py", line 18, in <module>
+    from unmix.make_models import make_vqvae, make_prior, restore_opt, save_checkpoint
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix/make_models.py", line 14, in <module>
+    from unmix.vqvae.vqvae import calculate_strides
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix/vqvae/vqvae.py", line 9, in <module>
+    from unmix.utils.audio_utils import spectral_convergence, spectral_loss, multispectral_loss, audio_postprocess
+  File "/common/home/projectgrps/IS460/IS460G4/unmix/unmix/utils/audio_utils.py", line 4, in <module>
+    import soundfile
+  File "/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/soundfile.py", line 142, in <module>
+    raise OSError('sndfile library not found')
+OSError: sndfile library not found
+srun: error: aloha: task 0: Exited with exit code 1
+srun: Terminating StepId=30069.1
+Job ID: 30069
+Cluster: crimson
+User/Group: IS460G4/IS460G4
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:02
+CPU Efficiency: 6.25% of 00:00:32 core-walltime
+Job Wall-clock time: 00:00:08
+Memory Utilized: 3.45 MB
+Memory Efficiency: 0.02% of 16.00 GB

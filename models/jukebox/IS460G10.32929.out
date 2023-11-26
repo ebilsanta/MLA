@@ -1,0 +1,30 @@
+You are allocated NVIDIA GeForce RTX 3090 on aloha
+You are using GPU 1
+start
+Trained
+Restored from logs/vqvae_bass_b6/checkpoint_step_80001.pth.tar
+1. model restored
+file:  0
+Traceback (most recent call last):
+  File "predict_channel.py", line 261, in <module>
+    x_out, loss, _metrics = vqvae(x, x, **forw_kwargs)
+  File "/common/home/projectgrps/IS460/IS460G10/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/common/home/projectgrps/IS460/IS460G10/jukebox/unmix/vqvae/vqvae.py", line 244, in forward
+    this_recons_loss = _loss_fn(loss_fn, x_target, x_out, hps)
+  File "/common/home/projectgrps/IS460/IS460G10/jukebox/unmix/vqvae/vqvae.py", line 55, in _loss_fn
+    sdr_loss = sdr_loss(x_target, x_pred)
+UnboundLocalError: local variable 'sdr_loss' referenced before assignment
+srun: error: aloha: task 0: Exited with exit code 1
+srun: Terminating StepId=32929.1
+Job ID: 32929
+Cluster: crimson
+User/Group: IS460G10/IS460G10
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:14
+CPU Efficiency: 8.33% of 00:02:48 core-walltime
+Job Wall-clock time: 00:00:42
+Memory Utilized: 618.82 MB
+Memory Efficiency: 3.78% of 16.00 GB

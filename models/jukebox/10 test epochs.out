@@ -1,0 +1,85 @@
+You are allocated NVIDIA GeForce RTX 3090 on toga
+You are using GPU 3
+1
+Using cuda True
+1
+0: Found 1 files. Getting durations
+0: self.sr=44100, min: 9, max: inf
+0: Keeping 1 of 1 files
+0: Found 1 files. Getting durations
+0: self.sr=44100, min: 9, max: inf
+0: Keeping 1 of 1 files
+{'l2': 0.010585434399656313, 'l1': 0.07124567031860352, 'spec': 3082.416015625}
+Creating Data Loader
+Creating Data Loaders for Stem Dataset
+0: Train 20 samples. Test 3 samples
+0: Train sampler: <torch.utils.data.distributed.DistributedSampler object at 0x7f3061840d10>
+0: Train loader: 3
+0: Train 20 stem samples. Test 3 stem samples
+0: Stem train sampler: <torch.utils.data.distributed.DistributedSampler object at 0x7f3061840f10>
+0: Stem train loader: 3
+Model from scratch
+0: Loading vqvae in train mode
+0: Reseting bottleneck emas
+Parameters VQVAE:900033
+Downloading from azure
+Restored from /common/home/projectgrps/IS460/IS460G10/.cache/jukebox/models/5b/vqvae.pth.tar
+Number of gpus:
+1
+Logging to logs/new_vqvae_test_b6
+Epoch:  -1 / 10
+/common/home/projectgrps/IS460/IS460G10/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 6 worker processes in total. Our suggested max number of worker in current system is 4, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+0/? [00:00<?, ?it/s]Logging train inputs/ouputs
+1/? [00:04<00:00,  4.97s/it]2/? [00:05<00:00,  3.76s/it]3/? [00:06<00:00,  2.91s/it]3/? [00:06<00:00,  2.30s/it]
+Train recons_loss_l1: 0.4332 spectral_loss_l1: 0.6357 multispectral_loss_l1: 0.4091 recons_loss: 0.4332 spectral_loss: 0.6357 multispectral_loss: 0.4091 spectral_convergence: 2.1288 l2_loss: 0.3341 l1_loss: 0.6583 linf_loss: 4.9590 commit_loss: 0.0097 fit: 0.6235 pn: 0.1684 entropy: 0.0000 used_curr: 0.5000 usage: 1024.0000 dk: 0.0012 loss: 0.8426 gn: 30.8372 lr: 0.0000 lg_loss_scale: 0.0000 epoch: -1.0000
+Epoch:  0 / 10
+/common/home/projectgrps/IS460/IS460G10/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/functional.py:633: UserWarning: stft will soon require the return_complex parameter be given for real inputs, and will further require that return_complex=True in a future PyTorch release. (Triggered internally at /opt/conda/conda-bld/pytorch_1670525541035/work/aten/src/ATen/native/SpectralOps.cpp:801.)
+  normalized, onesided, return_complex)
+/common/home/projectgrps/IS460/IS460G10/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:257: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+/common/home/projectgrps/IS460/IS460G10/jukebox/unmix/utils/ema.py:78: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at /opt/conda/conda-bld/pytorch_1670525541035/work/torch/csrc/utils/python_arg_parser.cpp:1420.)
+  self.state[group].mul_(self.mu).add_(1 - self.mu, self.get_model_state(group))
+0/? [00:00<?, ?it/s]1/? [00:01<00:00,  1.42s/it]2/? [00:02<00:00,  1.28s/it]3/? [00:03<00:00,  1.18s/it]3/? [00:03<00:00,  1.13s/it]
+Train recons_loss_l1: 0.4279 spectral_loss_l1: 0.6101 multispectral_loss_l1: 0.3942 recons_loss: 0.4279 spectral_loss: 0.6101 multispectral_loss: 0.3942 spectral_convergence: 1.5811 l2_loss: 0.3210 l1_loss: 0.6310 linf_loss: 5.3460 commit_loss: 0.0003 fit: 0.0183 pn: 0.1685 entropy: 0.0000 used_curr: 0.5000 usage: 1024.0000 dk: 0.0000 loss: 0.8221 gn: 27.7195 lr: 0.0000 lg_loss_scale: 0.0000 epoch: 0.0000
+Epoch:  1 / 10
+0/? [00:00<?, ?it/s]1/? [00:01<00:00,  1.56s/it]2/? [00:02<00:00,  1.37s/it]3/? [00:03<00:00,  1.25s/it]3/? [00:03<00:00,  1.18s/it]
+Train recons_loss_l1: 0.3617 spectral_loss_l1: 0.5226 multispectral_loss_l1: 0.3407 recons_loss: 0.3617 spectral_loss: 0.5226 multispectral_loss: 0.3407 spectral_convergence: 1.2917 l2_loss: 0.2579 l1_loss: 0.5299 linf_loss: 5.1918 commit_loss: 0.0004 fit: 0.0252 pn: 0.1695 entropy: 0.0000 used_curr: 0.5000 usage: 1024.0000 dk: 0.0000 loss: 0.7024 gn: 20.0181 lr: 0.0000 lg_loss_scale: 0.0000 epoch: 1.0000
+Epoch:  2 / 10
+0/? [00:00<?, ?it/s]1/? [00:01<00:00,  1.63s/it]2/? [00:02<00:00,  1.42s/it]3/? [00:03<00:00,  1.28s/it]3/? [00:03<00:00,  1.21s/it]
+Train recons_loss_l1: 0.2507 spectral_loss_l1: 0.4108 multispectral_loss_l1: 0.2726 recons_loss: 0.2507 spectral_loss: 0.4108 multispectral_loss: 0.2726 spectral_convergence: 1.0773 l2_loss: 0.1763 l1_loss: 0.3937 linf_loss: 3.7181 commit_loss: 0.0008 fit: 0.0499 pn: 0.1734 entropy: 0.0000 used_curr: 0.5000 usage: 1024.0000 dk: 0.0000 loss: 0.5233 gn: 6.2474 lr: 0.0000 lg_loss_scale: 0.0000 epoch: 2.0000
+Epoch:  3 / 10
+0/? [00:00<?, ?it/s]1/? [00:01<00:00,  1.59s/it]2/? [00:02<00:00,  1.39s/it]3/? [00:03<00:00,  1.26s/it]3/? [00:03<00:00,  1.19s/it]
+Train recons_loss_l1: 0.2432 spectral_loss_l1: 0.4177 multispectral_loss_l1: 0.2746 recons_loss: 0.2432 spectral_loss: 0.4177 multispectral_loss: 0.2746 spectral_convergence: 1.1086 l2_loss: 0.1775 l1_loss: 0.4171 linf_loss: 3.2827 commit_loss: 0.0012 fit: 0.0793 pn: 0.1766 entropy: 0.0000 used_curr: 0.5000 usage: 1024.0000 dk: 0.0001 loss: 0.5178 gn: 11.0408 lr: 0.0000 lg_loss_scale: 0.0000 epoch: 3.0000
+Epoch:  4 / 10
+0/? [00:00<?, ?it/s]1/? [00:01<00:00,  1.40s/it]2/? [00:02<00:00,  1.26s/it]3/? [00:03<00:00,  1.17s/it]3/? [00:03<00:00,  1.13s/it]
+Train recons_loss_l1: 0.2990 spectral_loss_l1: 0.4674 multispectral_loss_l1: 0.3062 recons_loss: 0.2990 spectral_loss: 0.4674 multispectral_loss: 0.3062 spectral_convergence: 1.1658 l2_loss: 0.2152 l1_loss: 0.4688 linf_loss: 4.1914 commit_loss: 0.0013 fit: 0.0807 pn: 0.1724 entropy: 0.0000 used_curr: 0.5000 usage: 1024.0000 dk: 0.0000 loss: 0.6053 gn: 14.4340 lr: 0.0000 lg_loss_scale: 0.0000 epoch: 4.0000
+Epoch:  5 / 10
+0/? [00:00<?, ?it/s]1/? [00:01<00:00,  1.30s/it]2/? [00:02<00:00,  1.19s/it]3/? [00:03<00:00,  1.12s/it]3/? [00:03<00:00,  1.10s/it]
+Train recons_loss_l1: 0.2309 spectral_loss_l1: 0.3938 multispectral_loss_l1: 0.2604 recons_loss: 0.2309 spectral_loss: 0.3938 multispectral_loss: 0.2604 spectral_convergence: 1.1066 l2_loss: 0.1651 l1_loss: 0.3899 linf_loss: 3.2882 commit_loss: 0.0014 fit: 0.0927 pn: 0.1634 entropy: 0.0000 used_curr: 0.5000 usage: 1024.0000 dk: 0.0000 loss: 0.4913 gn: 7.8411 lr: 0.0001 lg_loss_scale: 0.0000 epoch: 5.0000
+Epoch:  6 / 10
+0/? [00:00<?, ?it/s]1/? [00:01<00:00,  1.50s/it]2/? [00:02<00:00,  1.33s/it]3/? [00:03<00:00,  1.22s/it]3/? [00:03<00:00,  1.16s/it]
+Train recons_loss_l1: 0.2533 spectral_loss_l1: 0.4047 multispectral_loss_l1: 0.2689 recons_loss: 0.2533 spectral_loss: 0.4047 multispectral_loss: 0.2689 spectral_convergence: 1.0371 l2_loss: 0.1783 l1_loss: 0.3823 linf_loss: 3.7498 commit_loss: 0.0024 fit: 0.1505 pn: 0.1564 entropy: 0.0000 used_curr: 0.5000 usage: 1024.0000 dk: 0.0000 loss: 0.5222 gn: 5.3088 lr: 0.0001 lg_loss_scale: 0.0000 epoch: 6.0000
+Epoch:  7 / 10
+0/? [00:00<?, ?it/s]1/? [00:01<00:00,  1.59s/it]2/? [00:02<00:00,  1.39s/it]3/? [00:03<00:00,  1.26s/it]3/? [00:03<00:00,  1.19s/it]
+Train recons_loss_l1: 0.2606 spectral_loss_l1: 0.4073 multispectral_loss_l1: 0.2706 recons_loss: 0.2606 spectral_loss: 0.4073 multispectral_loss: 0.2706 spectral_convergence: 1.0527 l2_loss: 0.1773 l1_loss: 0.3797 linf_loss: 4.1678 commit_loss: 0.0033 fit: 0.2086 pn: 0.1552 entropy: 0.0000 used_curr: 0.5000 usage: 1024.0000 dk: 0.0001 loss: 0.5313 gn: 5.9831 lr: 0.0001 lg_loss_scale: 0.0000 epoch: 7.0000
+Epoch:  8 / 10
+0/? [00:00<?, ?it/s]1/? [00:01<00:00,  1.56s/it]2/? [00:02<00:00,  1.37s/it]3/? [00:03<00:00,  1.24s/it]3/? [00:03<00:00,  1.18s/it]
+Train recons_loss_l1: 0.2456 spectral_loss_l1: 0.3961 multispectral_loss_l1: 0.2635 recons_loss: 0.2456 spectral_loss: 0.3961 multispectral_loss: 0.2635 spectral_convergence: 1.0470 l2_loss: 0.1716 l1_loss: 0.3693 linf_loss: 3.6978 commit_loss: 0.0030 fit: 0.1931 pn: 0.1479 entropy: 0.0000 used_curr: 0.5000 usage: 1024.0000 dk: 0.0000 loss: 0.5091 gn: 3.8934 lr: 0.0001 lg_loss_scale: 0.0000 epoch: 8.0000
+Epoch:  9 / 10
+0/? [00:00<?, ?it/s]1/? [00:01<00:00,  1.22s/it]2/? [00:02<00:00,  1.14s/it]3/? [00:03<00:00,  1.08s/it]3/? [00:03<00:00,  1.07s/it]
+Train recons_loss_l1: 0.2535 spectral_loss_l1: 0.3958 multispectral_loss_l1: 0.2637 recons_loss: 0.2535 spectral_loss: 0.3958 multispectral_loss: 0.2637 spectral_convergence: 1.3960 l2_loss: 0.1773 l1_loss: 0.3711 linf_loss: 3.8134 commit_loss: 0.0029 fit: 0.1846 pn: 0.1340 entropy: 0.0000 used_curr: 0.5000 usage: 1024.0000 dk: 0.0000 loss: 0.5173 gn: 3.2386 lr: 0.0001 lg_loss_scale: 0.0000 epoch: 9.0000
+Job ID: 32720
+Cluster: crimson
+User/Group: IS460G10/IS460G10
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:03:56
+CPU Efficiency: 58.42% of 00:06:44 core-walltime
+Job Wall-clock time: 00:01:41
+Memory Utilized: 42.88 GB
+Memory Efficiency: 268.02% of 16.00 GB

@@ -1,0 +1,1131 @@
+You are allocated NVIDIA GeForce RTX 3090 on aloha
+You are using GPU 3
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Using cuda True
+0: Found 3 files. Getting durations
+0: self.sr=44100, min: 9, max: inf
+0: Keeping 3 of 3 files
+{'l2': 0.028815608780435525, 'l1': 0.135187437136968, 'spec': 4952.23193359375}
+Creating Data Loader
+0: Train 9 samples. Test 2 samples
+0: Train sampler: <torch.utils.data.distributed.DistributedSampler object at 0x7fd6e3431890>
+0: Train loader: 4
+Downloading from azure
+Restored from /common/home/projectgrps/IS460/IS460G4/.cache/unmix_encoder/models/5b/vqvae.pth.tar
+encoders.0.level_blocks.0.model.0.0.weight : loaded
+encoders.0.level_blocks.0.model.0.0.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.0.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.0.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.0.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.0.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.1.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.1.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.1.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.1.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.2.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.2.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.2.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.2.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.3.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.3.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.3.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.3.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.4.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.4.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.4.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.4.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.5.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.5.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.5.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.5.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.6.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.6.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.6.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.6.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.7.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.7.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.7.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.7.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.0.weight : loaded
+encoders.0.level_blocks.0.model.1.0.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.0.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.0.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.0.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.0.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.1.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.1.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.1.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.1.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.2.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.2.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.2.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.2.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.3.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.3.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.3.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.3.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.4.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.4.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.4.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.4.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.5.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.5.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.5.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.5.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.6.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.6.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.6.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.6.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.7.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.7.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.7.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.7.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.0.weight : loaded
+encoders.0.level_blocks.0.model.2.0.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.0.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.0.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.0.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.0.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.1.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.1.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.1.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.1.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.2.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.2.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.2.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.2.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.3.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.3.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.3.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.3.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.4.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.4.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.4.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.4.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.5.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.5.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.5.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.5.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.6.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.6.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.6.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.6.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.7.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.7.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.7.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.7.model.3.bias : loaded
+encoders.0.level_blocks.0.model.3.weight : loaded
+encoders.0.level_blocks.0.model.3.bias : loaded
+encoders.1.level_blocks.0.model.0.0.weight : ignored
+encoders.1.level_blocks.0.model.0.0.bias : ignored
+encoders.1.level_blocks.0.model.0.1.model.0.model.1.weight : ignored
+encoders.1.level_blocks.0.model.0.1.model.0.model.1.bias : ignored
+encoders.1.level_blocks.0.model.0.1.model.0.model.3.weight : ignored
+encoders.1.level_blocks.0.model.0.1.model.0.model.3.bias : ignored
+encoders.1.level_blocks.0.model.0.1.model.1.model.1.weight : ignored
+encoders.1.level_blocks.0.model.0.1.model.1.model.1.bias : ignored
+encoders.1.level_blocks.0.model.0.1.model.1.model.3.weight : ignored
+encoders.1.level_blocks.0.model.0.1.model.1.model.3.bias : ignored
+encoders.1.level_blocks.0.model.0.1.model.2.model.1.weight : ignored
+encoders.1.level_blocks.0.model.0.1.model.2.model.1.bias : ignored
+encoders.1.level_blocks.0.model.0.1.model.2.model.3.weight : ignored
+encoders.1.level_blocks.0.model.0.1.model.2.model.3.bias : ignored
+encoders.1.level_blocks.0.model.0.1.model.3.model.1.weight : ignored
+encoders.1.level_blocks.0.model.0.1.model.3.model.1.bias : ignored
+encoders.1.level_blocks.0.model.0.1.model.3.model.3.weight : ignored
+encoders.1.level_blocks.0.model.0.1.model.3.model.3.bias : ignored
+encoders.1.level_blocks.0.model.1.0.weight : ignored
+encoders.1.level_blocks.0.model.1.0.bias : ignored
+encoders.1.level_blocks.0.model.1.1.model.0.model.1.weight : ignored
+encoders.1.level_blocks.0.model.1.1.model.0.model.1.bias : ignored
+encoders.1.level_blocks.0.model.1.1.model.0.model.3.weight : ignored
+encoders.1.level_blocks.0.model.1.1.model.0.model.3.bias : ignored
+encoders.1.level_blocks.0.model.1.1.model.1.model.1.weight : ignored
+encoders.1.level_blocks.0.model.1.1.model.1.model.1.bias : ignored
+encoders.1.level_blocks.0.model.1.1.model.1.model.3.weight : ignored
+encoders.1.level_blocks.0.model.1.1.model.1.model.3.bias : ignored
+encoders.1.level_blocks.0.model.1.1.model.2.model.1.weight : ignored
+encoders.1.level_blocks.0.model.1.1.model.2.model.1.bias : ignored
+encoders.1.level_blocks.0.model.1.1.model.2.model.3.weight : ignored
+encoders.1.level_blocks.0.model.1.1.model.2.model.3.bias : ignored
+encoders.1.level_blocks.0.model.1.1.model.3.model.1.weight : ignored
+encoders.1.level_blocks.0.model.1.1.model.3.model.1.bias : ignored
+encoders.1.level_blocks.0.model.1.1.model.3.model.3.weight : ignored
+encoders.1.level_blocks.0.model.1.1.model.3.model.3.bias : ignored
+encoders.1.level_blocks.0.model.2.0.weight : ignored
+encoders.1.level_blocks.0.model.2.0.bias : ignored
+encoders.1.level_blocks.0.model.2.1.model.0.model.1.weight : ignored
+encoders.1.level_blocks.0.model.2.1.model.0.model.1.bias : ignored
+encoders.1.level_blocks.0.model.2.1.model.0.model.3.weight : ignored
+encoders.1.level_blocks.0.model.2.1.model.0.model.3.bias : ignored
+encoders.1.level_blocks.0.model.2.1.model.1.model.1.weight : ignored
+encoders.1.level_blocks.0.model.2.1.model.1.model.1.bias : ignored
+encoders.1.level_blocks.0.model.2.1.model.1.model.3.weight : ignored
+encoders.1.level_blocks.0.model.2.1.model.1.model.3.bias : ignored
+encoders.1.level_blocks.0.model.2.1.model.2.model.1.weight : ignored
+encoders.1.level_blocks.0.model.2.1.model.2.model.1.bias : ignored
+encoders.1.level_blocks.0.model.2.1.model.2.model.3.weight : ignored
+encoders.1.level_blocks.0.model.2.1.model.2.model.3.bias : ignored
+encoders.1.level_blocks.0.model.2.1.model.3.model.1.weight : ignored
+encoders.1.level_blocks.0.model.2.1.model.3.model.1.bias : ignored
+encoders.1.level_blocks.0.model.2.1.model.3.model.3.weight : ignored
+encoders.1.level_blocks.0.model.2.1.model.3.model.3.bias : ignored
+encoders.1.level_blocks.0.model.3.weight : ignored
+encoders.1.level_blocks.0.model.3.bias : ignored
+encoders.1.level_blocks.1.model.0.0.weight : ignored
+encoders.1.level_blocks.1.model.0.0.bias : ignored
+encoders.1.level_blocks.1.model.0.1.model.0.model.1.weight : ignored
+encoders.1.level_blocks.1.model.0.1.model.0.model.1.bias : ignored
+encoders.1.level_blocks.1.model.0.1.model.0.model.3.weight : ignored
+encoders.1.level_blocks.1.model.0.1.model.0.model.3.bias : ignored
+encoders.1.level_blocks.1.model.0.1.model.1.model.1.weight : ignored
+encoders.1.level_blocks.1.model.0.1.model.1.model.1.bias : ignored
+encoders.1.level_blocks.1.model.0.1.model.1.model.3.weight : ignored
+encoders.1.level_blocks.1.model.0.1.model.1.model.3.bias : ignored
+encoders.1.level_blocks.1.model.0.1.model.2.model.1.weight : ignored
+encoders.1.level_blocks.1.model.0.1.model.2.model.1.bias : ignored
+encoders.1.level_blocks.1.model.0.1.model.2.model.3.weight : ignored
+encoders.1.level_blocks.1.model.0.1.model.2.model.3.bias : ignored
+encoders.1.level_blocks.1.model.0.1.model.3.model.1.weight : ignored
+encoders.1.level_blocks.1.model.0.1.model.3.model.1.bias : ignored
+encoders.1.level_blocks.1.model.0.1.model.3.model.3.weight : ignored
+encoders.1.level_blocks.1.model.0.1.model.3.model.3.bias : ignored
+encoders.1.level_blocks.1.model.1.0.weight : ignored
+encoders.1.level_blocks.1.model.1.0.bias : ignored
+encoders.1.level_blocks.1.model.1.1.model.0.model.1.weight : ignored
+encoders.1.level_blocks.1.model.1.1.model.0.model.1.bias : ignored
+encoders.1.level_blocks.1.model.1.1.model.0.model.3.weight : ignored
+encoders.1.level_blocks.1.model.1.1.model.0.model.3.bias : ignored
+encoders.1.level_blocks.1.model.1.1.model.1.model.1.weight : ignored
+encoders.1.level_blocks.1.model.1.1.model.1.model.1.bias : ignored
+encoders.1.level_blocks.1.model.1.1.model.1.model.3.weight : ignored
+encoders.1.level_blocks.1.model.1.1.model.1.model.3.bias : ignored
+encoders.1.level_blocks.1.model.1.1.model.2.model.1.weight : ignored
+encoders.1.level_blocks.1.model.1.1.model.2.model.1.bias : ignored
+encoders.1.level_blocks.1.model.1.1.model.2.model.3.weight : ignored
+encoders.1.level_blocks.1.model.1.1.model.2.model.3.bias : ignored
+encoders.1.level_blocks.1.model.1.1.model.3.model.1.weight : ignored
+encoders.1.level_blocks.1.model.1.1.model.3.model.1.bias : ignored
+encoders.1.level_blocks.1.model.1.1.model.3.model.3.weight : ignored
+encoders.1.level_blocks.1.model.1.1.model.3.model.3.bias : ignored
+encoders.1.level_blocks.1.model.2.weight : ignored
+encoders.1.level_blocks.1.model.2.bias : ignored
+encoders.2.level_blocks.0.model.0.0.weight : ignored
+encoders.2.level_blocks.0.model.0.0.bias : ignored
+encoders.2.level_blocks.0.model.0.1.model.0.model.1.weight : ignored
+encoders.2.level_blocks.0.model.0.1.model.0.model.1.bias : ignored
+encoders.2.level_blocks.0.model.0.1.model.0.model.3.weight : ignored
+encoders.2.level_blocks.0.model.0.1.model.0.model.3.bias : ignored
+encoders.2.level_blocks.0.model.0.1.model.1.model.1.weight : ignored
+encoders.2.level_blocks.0.model.0.1.model.1.model.1.bias : ignored
+encoders.2.level_blocks.0.model.0.1.model.1.model.3.weight : ignored
+encoders.2.level_blocks.0.model.0.1.model.1.model.3.bias : ignored
+encoders.2.level_blocks.0.model.0.1.model.2.model.1.weight : ignored
+encoders.2.level_blocks.0.model.0.1.model.2.model.1.bias : ignored
+encoders.2.level_blocks.0.model.0.1.model.2.model.3.weight : ignored
+encoders.2.level_blocks.0.model.0.1.model.2.model.3.bias : ignored
+encoders.2.level_blocks.0.model.0.1.model.3.model.1.weight : ignored
+encoders.2.level_blocks.0.model.0.1.model.3.model.1.bias : ignored
+encoders.2.level_blocks.0.model.0.1.model.3.model.3.weight : ignored
+encoders.2.level_blocks.0.model.0.1.model.3.model.3.bias : ignored
+encoders.2.level_blocks.0.model.1.0.weight : ignored
+encoders.2.level_blocks.0.model.1.0.bias : ignored
+encoders.2.level_blocks.0.model.1.1.model.0.model.1.weight : ignored
+encoders.2.level_blocks.0.model.1.1.model.0.model.1.bias : ignored
+encoders.2.level_blocks.0.model.1.1.model.0.model.3.weight : ignored
+encoders.2.level_blocks.0.model.1.1.model.0.model.3.bias : ignored
+encoders.2.level_blocks.0.model.1.1.model.1.model.1.weight : ignored
+encoders.2.level_blocks.0.model.1.1.model.1.model.1.bias : ignored
+encoders.2.level_blocks.0.model.1.1.model.1.model.3.weight : ignored
+encoders.2.level_blocks.0.model.1.1.model.1.model.3.bias : ignored
+encoders.2.level_blocks.0.model.1.1.model.2.model.1.weight : ignored
+encoders.2.level_blocks.0.model.1.1.model.2.model.1.bias : ignored
+encoders.2.level_blocks.0.model.1.1.model.2.model.3.weight : ignored
+encoders.2.level_blocks.0.model.1.1.model.2.model.3.bias : ignored
+encoders.2.level_blocks.0.model.1.1.model.3.model.1.weight : ignored
+encoders.2.level_blocks.0.model.1.1.model.3.model.1.bias : ignored
+encoders.2.level_blocks.0.model.1.1.model.3.model.3.weight : ignored
+encoders.2.level_blocks.0.model.1.1.model.3.model.3.bias : ignored
+encoders.2.level_blocks.0.model.2.0.weight : ignored
+encoders.2.level_blocks.0.model.2.0.bias : ignored
+encoders.2.level_blocks.0.model.2.1.model.0.model.1.weight : ignored
+encoders.2.level_blocks.0.model.2.1.model.0.model.1.bias : ignored
+encoders.2.level_blocks.0.model.2.1.model.0.model.3.weight : ignored
+encoders.2.level_blocks.0.model.2.1.model.0.model.3.bias : ignored
+encoders.2.level_blocks.0.model.2.1.model.1.model.1.weight : ignored
+encoders.2.level_blocks.0.model.2.1.model.1.model.1.bias : ignored
+encoders.2.level_blocks.0.model.2.1.model.1.model.3.weight : ignored
+encoders.2.level_blocks.0.model.2.1.model.1.model.3.bias : ignored
+encoders.2.level_blocks.0.model.2.1.model.2.model.1.weight : ignored
+encoders.2.level_blocks.0.model.2.1.model.2.model.1.bias : ignored
+encoders.2.level_blocks.0.model.2.1.model.2.model.3.weight : ignored
+encoders.2.level_blocks.0.model.2.1.model.2.model.3.bias : ignored
+encoders.2.level_blocks.0.model.2.1.model.3.model.1.weight : ignored
+encoders.2.level_blocks.0.model.2.1.model.3.model.1.bias : ignored
+encoders.2.level_blocks.0.model.2.1.model.3.model.3.weight : ignored
+encoders.2.level_blocks.0.model.2.1.model.3.model.3.bias : ignored
+encoders.2.level_blocks.0.model.3.weight : ignored
+encoders.2.level_blocks.0.model.3.bias : ignored
+encoders.2.level_blocks.1.model.0.0.weight : ignored
+encoders.2.level_blocks.1.model.0.0.bias : ignored
+encoders.2.level_blocks.1.model.0.1.model.0.model.1.weight : ignored
+encoders.2.level_blocks.1.model.0.1.model.0.model.1.bias : ignored
+encoders.2.level_blocks.1.model.0.1.model.0.model.3.weight : ignored
+encoders.2.level_blocks.1.model.0.1.model.0.model.3.bias : ignored
+encoders.2.level_blocks.1.model.0.1.model.1.model.1.weight : ignored
+encoders.2.level_blocks.1.model.0.1.model.1.model.1.bias : ignored
+encoders.2.level_blocks.1.model.0.1.model.1.model.3.weight : ignored
+encoders.2.level_blocks.1.model.0.1.model.1.model.3.bias : ignored
+encoders.2.level_blocks.1.model.0.1.model.2.model.1.weight : ignored
+encoders.2.level_blocks.1.model.0.1.model.2.model.1.bias : ignored
+encoders.2.level_blocks.1.model.0.1.model.2.model.3.weight : ignored
+encoders.2.level_blocks.1.model.0.1.model.2.model.3.bias : ignored
+encoders.2.level_blocks.1.model.0.1.model.3.model.1.weight : ignored
+encoders.2.level_blocks.1.model.0.1.model.3.model.1.bias : ignored
+encoders.2.level_blocks.1.model.0.1.model.3.model.3.weight : ignored
+encoders.2.level_blocks.1.model.0.1.model.3.model.3.bias : ignored
+encoders.2.level_blocks.1.model.1.0.weight : ignored
+encoders.2.level_blocks.1.model.1.0.bias : ignored
+encoders.2.level_blocks.1.model.1.1.model.0.model.1.weight : ignored
+encoders.2.level_blocks.1.model.1.1.model.0.model.1.bias : ignored
+encoders.2.level_blocks.1.model.1.1.model.0.model.3.weight : ignored
+encoders.2.level_blocks.1.model.1.1.model.0.model.3.bias : ignored
+encoders.2.level_blocks.1.model.1.1.model.1.model.1.weight : ignored
+encoders.2.level_blocks.1.model.1.1.model.1.model.1.bias : ignored
+encoders.2.level_blocks.1.model.1.1.model.1.model.3.weight : ignored
+encoders.2.level_blocks.1.model.1.1.model.1.model.3.bias : ignored
+encoders.2.level_blocks.1.model.1.1.model.2.model.1.weight : ignored
+encoders.2.level_blocks.1.model.1.1.model.2.model.1.bias : ignored
+encoders.2.level_blocks.1.model.1.1.model.2.model.3.weight : ignored
+encoders.2.level_blocks.1.model.1.1.model.2.model.3.bias : ignored
+encoders.2.level_blocks.1.model.1.1.model.3.model.1.weight : ignored
+encoders.2.level_blocks.1.model.1.1.model.3.model.1.bias : ignored
+encoders.2.level_blocks.1.model.1.1.model.3.model.3.weight : ignored
+encoders.2.level_blocks.1.model.1.1.model.3.model.3.bias : ignored
+encoders.2.level_blocks.1.model.2.weight : ignored
+encoders.2.level_blocks.1.model.2.bias : ignored
+encoders.2.level_blocks.2.model.0.0.weight : ignored
+encoders.2.level_blocks.2.model.0.0.bias : ignored
+encoders.2.level_blocks.2.model.0.1.model.0.model.1.weight : ignored
+encoders.2.level_blocks.2.model.0.1.model.0.model.1.bias : ignored
+encoders.2.level_blocks.2.model.0.1.model.0.model.3.weight : ignored
+encoders.2.level_blocks.2.model.0.1.model.0.model.3.bias : ignored
+encoders.2.level_blocks.2.model.0.1.model.1.model.1.weight : ignored
+encoders.2.level_blocks.2.model.0.1.model.1.model.1.bias : ignored
+encoders.2.level_blocks.2.model.0.1.model.1.model.3.weight : ignored
+encoders.2.level_blocks.2.model.0.1.model.1.model.3.bias : ignored
+encoders.2.level_blocks.2.model.0.1.model.2.model.1.weight : ignored
+encoders.2.level_blocks.2.model.0.1.model.2.model.1.bias : ignored
+encoders.2.level_blocks.2.model.0.1.model.2.model.3.weight : ignored
+encoders.2.level_blocks.2.model.0.1.model.2.model.3.bias : ignored
+encoders.2.level_blocks.2.model.0.1.model.3.model.1.weight : ignored
+encoders.2.level_blocks.2.model.0.1.model.3.model.1.bias : ignored
+encoders.2.level_blocks.2.model.0.1.model.3.model.3.weight : ignored
+encoders.2.level_blocks.2.model.0.1.model.3.model.3.bias : ignored
+encoders.2.level_blocks.2.model.1.0.weight : ignored
+encoders.2.level_blocks.2.model.1.0.bias : ignored
+encoders.2.level_blocks.2.model.1.1.model.0.model.1.weight : ignored
+encoders.2.level_blocks.2.model.1.1.model.0.model.1.bias : ignored
+encoders.2.level_blocks.2.model.1.1.model.0.model.3.weight : ignored
+encoders.2.level_blocks.2.model.1.1.model.0.model.3.bias : ignored
+encoders.2.level_blocks.2.model.1.1.model.1.model.1.weight : ignored
+encoders.2.level_blocks.2.model.1.1.model.1.model.1.bias : ignored
+encoders.2.level_blocks.2.model.1.1.model.1.model.3.weight : ignored
+encoders.2.level_blocks.2.model.1.1.model.1.model.3.bias : ignored
+encoders.2.level_blocks.2.model.1.1.model.2.model.1.weight : ignored
+encoders.2.level_blocks.2.model.1.1.model.2.model.1.bias : ignored
+encoders.2.level_blocks.2.model.1.1.model.2.model.3.weight : ignored
+encoders.2.level_blocks.2.model.1.1.model.2.model.3.bias : ignored
+encoders.2.level_blocks.2.model.1.1.model.3.model.1.weight : ignored
+encoders.2.level_blocks.2.model.1.1.model.3.model.1.bias : ignored
+encoders.2.level_blocks.2.model.1.1.model.3.model.3.weight : ignored
+encoders.2.level_blocks.2.model.1.1.model.3.model.3.bias : ignored
+encoders.2.level_blocks.2.model.2.weight : ignored
+encoders.2.level_blocks.2.model.2.bias : ignored
+decoders.0.level_blocks.0.model.0.weight : ignored
+decoders.0.level_blocks.0.model.0.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.0.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.0.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.0.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.0.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.1.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.1.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.1.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.1.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.2.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.2.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.2.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.2.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.3.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.3.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.3.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.3.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.4.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.4.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.4.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.4.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.5.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.5.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.5.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.5.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.6.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.6.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.6.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.6.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.7.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.7.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.7.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.7.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.1.weight : ignored
+decoders.0.level_blocks.0.model.1.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.0.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.0.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.0.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.0.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.1.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.1.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.1.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.1.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.2.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.2.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.2.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.2.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.3.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.3.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.3.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.3.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.4.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.4.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.4.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.4.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.5.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.5.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.5.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.5.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.6.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.6.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.6.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.6.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.7.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.7.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.7.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.7.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.1.weight : ignored
+decoders.0.level_blocks.0.model.2.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.0.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.0.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.0.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.0.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.1.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.1.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.1.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.1.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.2.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.2.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.2.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.2.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.3.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.3.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.3.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.3.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.4.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.4.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.4.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.4.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.5.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.5.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.5.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.5.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.6.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.6.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.6.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.6.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.7.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.7.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.7.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.7.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.1.weight : ignored
+decoders.0.level_blocks.0.model.3.1.bias : ignored
+decoders.0.out.weight : ignored
+decoders.0.out.bias : ignored
+decoders.1.level_blocks.0.model.0.weight : ignored
+decoders.1.level_blocks.0.model.0.bias : ignored
+decoders.1.level_blocks.0.model.1.0.model.0.model.1.weight : ignored
+decoders.1.level_blocks.0.model.1.0.model.0.model.1.bias : ignored
+decoders.1.level_blocks.0.model.1.0.model.0.model.3.weight : ignored
+decoders.1.level_blocks.0.model.1.0.model.0.model.3.bias : ignored
+decoders.1.level_blocks.0.model.1.0.model.1.model.1.weight : ignored
+decoders.1.level_blocks.0.model.1.0.model.1.model.1.bias : ignored
+decoders.1.level_blocks.0.model.1.0.model.1.model.3.weight : ignored
+decoders.1.level_blocks.0.model.1.0.model.1.model.3.bias : ignored
+decoders.1.level_blocks.0.model.1.0.model.2.model.1.weight : ignored
+decoders.1.level_blocks.0.model.1.0.model.2.model.1.bias : ignored
+decoders.1.level_blocks.0.model.1.0.model.2.model.3.weight : ignored
+decoders.1.level_blocks.0.model.1.0.model.2.model.3.bias : ignored
+decoders.1.level_blocks.0.model.1.0.model.3.model.1.weight : ignored
+decoders.1.level_blocks.0.model.1.0.model.3.model.1.bias : ignored
+decoders.1.level_blocks.0.model.1.0.model.3.model.3.weight : ignored
+decoders.1.level_blocks.0.model.1.0.model.3.model.3.bias : ignored
+decoders.1.level_blocks.0.model.1.1.weight : ignored
+decoders.1.level_blocks.0.model.1.1.bias : ignored
+decoders.1.level_blocks.0.model.2.0.model.0.model.1.weight : ignored
+decoders.1.level_blocks.0.model.2.0.model.0.model.1.bias : ignored
+decoders.1.level_blocks.0.model.2.0.model.0.model.3.weight : ignored
+decoders.1.level_blocks.0.model.2.0.model.0.model.3.bias : ignored
+decoders.1.level_blocks.0.model.2.0.model.1.model.1.weight : ignored
+decoders.1.level_blocks.0.model.2.0.model.1.model.1.bias : ignored
+decoders.1.level_blocks.0.model.2.0.model.1.model.3.weight : ignored
+decoders.1.level_blocks.0.model.2.0.model.1.model.3.bias : ignored
+decoders.1.level_blocks.0.model.2.0.model.2.model.1.weight : ignored
+decoders.1.level_blocks.0.model.2.0.model.2.model.1.bias : ignored
+decoders.1.level_blocks.0.model.2.0.model.2.model.3.weight : ignored
+decoders.1.level_blocks.0.model.2.0.model.2.model.3.bias : ignored
+decoders.1.level_blocks.0.model.2.0.model.3.model.1.weight : ignored
+decoders.1.level_blocks.0.model.2.0.model.3.model.1.bias : ignored
+decoders.1.level_blocks.0.model.2.0.model.3.model.3.weight : ignored
+decoders.1.level_blocks.0.model.2.0.model.3.model.3.bias : ignored
+decoders.1.level_blocks.0.model.2.1.weight : ignored
+decoders.1.level_blocks.0.model.2.1.bias : ignored
+decoders.1.level_blocks.0.model.3.0.model.0.model.1.weight : ignored
+decoders.1.level_blocks.0.model.3.0.model.0.model.1.bias : ignored
+decoders.1.level_blocks.0.model.3.0.model.0.model.3.weight : ignored
+decoders.1.level_blocks.0.model.3.0.model.0.model.3.bias : ignored
+decoders.1.level_blocks.0.model.3.0.model.1.model.1.weight : ignored
+decoders.1.level_blocks.0.model.3.0.model.1.model.1.bias : ignored
+decoders.1.level_blocks.0.model.3.0.model.1.model.3.weight : ignored
+decoders.1.level_blocks.0.model.3.0.model.1.model.3.bias : ignored
+decoders.1.level_blocks.0.model.3.0.model.2.model.1.weight : ignored
+decoders.1.level_blocks.0.model.3.0.model.2.model.1.bias : ignored
+decoders.1.level_blocks.0.model.3.0.model.2.model.3.weight : ignored
+decoders.1.level_blocks.0.model.3.0.model.2.model.3.bias : ignored
+decoders.1.level_blocks.0.model.3.0.model.3.model.1.weight : ignored
+decoders.1.level_blocks.0.model.3.0.model.3.model.1.bias : ignored
+decoders.1.level_blocks.0.model.3.0.model.3.model.3.weight : ignored
+decoders.1.level_blocks.0.model.3.0.model.3.model.3.bias : ignored
+decoders.1.level_blocks.0.model.3.1.weight : ignored
+decoders.1.level_blocks.0.model.3.1.bias : ignored
+decoders.1.level_blocks.1.model.0.weight : ignored
+decoders.1.level_blocks.1.model.0.bias : ignored
+decoders.1.level_blocks.1.model.1.0.model.0.model.1.weight : ignored
+decoders.1.level_blocks.1.model.1.0.model.0.model.1.bias : ignored
+decoders.1.level_blocks.1.model.1.0.model.0.model.3.weight : ignored
+decoders.1.level_blocks.1.model.1.0.model.0.model.3.bias : ignored
+decoders.1.level_blocks.1.model.1.0.model.1.model.1.weight : ignored
+decoders.1.level_blocks.1.model.1.0.model.1.model.1.bias : ignored
+decoders.1.level_blocks.1.model.1.0.model.1.model.3.weight : ignored
+decoders.1.level_blocks.1.model.1.0.model.1.model.3.bias : ignored
+decoders.1.level_blocks.1.model.1.0.model.2.model.1.weight : ignored
+decoders.1.level_blocks.1.model.1.0.model.2.model.1.bias : ignored
+decoders.1.level_blocks.1.model.1.0.model.2.model.3.weight : ignored
+decoders.1.level_blocks.1.model.1.0.model.2.model.3.bias : ignored
+decoders.1.level_blocks.1.model.1.0.model.3.model.1.weight : ignored
+decoders.1.level_blocks.1.model.1.0.model.3.model.1.bias : ignored
+decoders.1.level_blocks.1.model.1.0.model.3.model.3.weight : ignored
+decoders.1.level_blocks.1.model.1.0.model.3.model.3.bias : ignored
+decoders.1.level_blocks.1.model.1.1.weight : ignored
+decoders.1.level_blocks.1.model.1.1.bias : ignored
+decoders.1.level_blocks.1.model.2.0.model.0.model.1.weight : ignored
+decoders.1.level_blocks.1.model.2.0.model.0.model.1.bias : ignored
+decoders.1.level_blocks.1.model.2.0.model.0.model.3.weight : ignored
+decoders.1.level_blocks.1.model.2.0.model.0.model.3.bias : ignored
+decoders.1.level_blocks.1.model.2.0.model.1.model.1.weight : ignored
+decoders.1.level_blocks.1.model.2.0.model.1.model.1.bias : ignored
+decoders.1.level_blocks.1.model.2.0.model.1.model.3.weight : ignored
+decoders.1.level_blocks.1.model.2.0.model.1.model.3.bias : ignored
+decoders.1.level_blocks.1.model.2.0.model.2.model.1.weight : ignored
+decoders.1.level_blocks.1.model.2.0.model.2.model.1.bias : ignored
+decoders.1.level_blocks.1.model.2.0.model.2.model.3.weight : ignored
+decoders.1.level_blocks.1.model.2.0.model.2.model.3.bias : ignored
+decoders.1.level_blocks.1.model.2.0.model.3.model.1.weight : ignored
+decoders.1.level_blocks.1.model.2.0.model.3.model.1.bias : ignored
+decoders.1.level_blocks.1.model.2.0.model.3.model.3.weight : ignored
+decoders.1.level_blocks.1.model.2.0.model.3.model.3.bias : ignored
+decoders.1.level_blocks.1.model.2.1.weight : ignored
+decoders.1.level_blocks.1.model.2.1.bias : ignored
+decoders.1.out.weight : ignored
+decoders.1.out.bias : ignored
+decoders.2.level_blocks.0.model.0.weight : ignored
+decoders.2.level_blocks.0.model.0.bias : ignored
+decoders.2.level_blocks.0.model.1.0.model.0.model.1.weight : ignored
+decoders.2.level_blocks.0.model.1.0.model.0.model.1.bias : ignored
+decoders.2.level_blocks.0.model.1.0.model.0.model.3.weight : ignored
+decoders.2.level_blocks.0.model.1.0.model.0.model.3.bias : ignored
+decoders.2.level_blocks.0.model.1.0.model.1.model.1.weight : ignored
+decoders.2.level_blocks.0.model.1.0.model.1.model.1.bias : ignored
+decoders.2.level_blocks.0.model.1.0.model.1.model.3.weight : ignored
+decoders.2.level_blocks.0.model.1.0.model.1.model.3.bias : ignored
+decoders.2.level_blocks.0.model.1.0.model.2.model.1.weight : ignored
+decoders.2.level_blocks.0.model.1.0.model.2.model.1.bias : ignored
+decoders.2.level_blocks.0.model.1.0.model.2.model.3.weight : ignored
+decoders.2.level_blocks.0.model.1.0.model.2.model.3.bias : ignored
+decoders.2.level_blocks.0.model.1.0.model.3.model.1.weight : ignored
+decoders.2.level_blocks.0.model.1.0.model.3.model.1.bias : ignored
+decoders.2.level_blocks.0.model.1.0.model.3.model.3.weight : ignored
+decoders.2.level_blocks.0.model.1.0.model.3.model.3.bias : ignored
+decoders.2.level_blocks.0.model.1.1.weight : ignored
+decoders.2.level_blocks.0.model.1.1.bias : ignored
+decoders.2.level_blocks.0.model.2.0.model.0.model.1.weight : ignored
+decoders.2.level_blocks.0.model.2.0.model.0.model.1.bias : ignored
+decoders.2.level_blocks.0.model.2.0.model.0.model.3.weight : ignored
+decoders.2.level_blocks.0.model.2.0.model.0.model.3.bias : ignored
+decoders.2.level_blocks.0.model.2.0.model.1.model.1.weight : ignored
+decoders.2.level_blocks.0.model.2.0.model.1.model.1.bias : ignored
+decoders.2.level_blocks.0.model.2.0.model.1.model.3.weight : ignored
+decoders.2.level_blocks.0.model.2.0.model.1.model.3.bias : ignored
+decoders.2.level_blocks.0.model.2.0.model.2.model.1.weight : ignored
+decoders.2.level_blocks.0.model.2.0.model.2.model.1.bias : ignored
+decoders.2.level_blocks.0.model.2.0.model.2.model.3.weight : ignored
+decoders.2.level_blocks.0.model.2.0.model.2.model.3.bias : ignored
+decoders.2.level_blocks.0.model.2.0.model.3.model.1.weight : ignored
+decoders.2.level_blocks.0.model.2.0.model.3.model.1.bias : ignored
+decoders.2.level_blocks.0.model.2.0.model.3.model.3.weight : ignored
+decoders.2.level_blocks.0.model.2.0.model.3.model.3.bias : ignored
+decoders.2.level_blocks.0.model.2.1.weight : ignored
+decoders.2.level_blocks.0.model.2.1.bias : ignored
+decoders.2.level_blocks.0.model.3.0.model.0.model.1.weight : ignored
+decoders.2.level_blocks.0.model.3.0.model.0.model.1.bias : ignored
+decoders.2.level_blocks.0.model.3.0.model.0.model.3.weight : ignored
+decoders.2.level_blocks.0.model.3.0.model.0.model.3.bias : ignored
+decoders.2.level_blocks.0.model.3.0.model.1.model.1.weight : ignored
+decoders.2.level_blocks.0.model.3.0.model.1.model.1.bias : ignored
+decoders.2.level_blocks.0.model.3.0.model.1.model.3.weight : ignored
+decoders.2.level_blocks.0.model.3.0.model.1.model.3.bias : ignored
+decoders.2.level_blocks.0.model.3.0.model.2.model.1.weight : ignored
+decoders.2.level_blocks.0.model.3.0.model.2.model.1.bias : ignored
+decoders.2.level_blocks.0.model.3.0.model.2.model.3.weight : ignored
+decoders.2.level_blocks.0.model.3.0.model.2.model.3.bias : ignored
+decoders.2.level_blocks.0.model.3.0.model.3.model.1.weight : ignored
+decoders.2.level_blocks.0.model.3.0.model.3.model.1.bias : ignored
+decoders.2.level_blocks.0.model.3.0.model.3.model.3.weight : ignored
+decoders.2.level_blocks.0.model.3.0.model.3.model.3.bias : ignored
+decoders.2.level_blocks.0.model.3.1.weight : ignored
+decoders.2.level_blocks.0.model.3.1.bias : ignored
+decoders.2.level_blocks.1.model.0.weight : ignored
+decoders.2.level_blocks.1.model.0.bias : ignored
+decoders.2.level_blocks.1.model.1.0.model.0.model.1.weight : ignored
+decoders.2.level_blocks.1.model.1.0.model.0.model.1.bias : ignored
+decoders.2.level_blocks.1.model.1.0.model.0.model.3.weight : ignored
+decoders.2.level_blocks.1.model.1.0.model.0.model.3.bias : ignored
+decoders.2.level_blocks.1.model.1.0.model.1.model.1.weight : ignored
+decoders.2.level_blocks.1.model.1.0.model.1.model.1.bias : ignored
+decoders.2.level_blocks.1.model.1.0.model.1.model.3.weight : ignored
+decoders.2.level_blocks.1.model.1.0.model.1.model.3.bias : ignored
+decoders.2.level_blocks.1.model.1.0.model.2.model.1.weight : ignored
+decoders.2.level_blocks.1.model.1.0.model.2.model.1.bias : ignored
+decoders.2.level_blocks.1.model.1.0.model.2.model.3.weight : ignored
+decoders.2.level_blocks.1.model.1.0.model.2.model.3.bias : ignored
+decoders.2.level_blocks.1.model.1.0.model.3.model.1.weight : ignored
+decoders.2.level_blocks.1.model.1.0.model.3.model.1.bias : ignored
+decoders.2.level_blocks.1.model.1.0.model.3.model.3.weight : ignored
+decoders.2.level_blocks.1.model.1.0.model.3.model.3.bias : ignored
+decoders.2.level_blocks.1.model.1.1.weight : ignored
+decoders.2.level_blocks.1.model.1.1.bias : ignored
+decoders.2.level_blocks.1.model.2.0.model.0.model.1.weight : ignored
+decoders.2.level_blocks.1.model.2.0.model.0.model.1.bias : ignored
+decoders.2.level_blocks.1.model.2.0.model.0.model.3.weight : ignored
+decoders.2.level_blocks.1.model.2.0.model.0.model.3.bias : ignored
+decoders.2.level_blocks.1.model.2.0.model.1.model.1.weight : ignored
+decoders.2.level_blocks.1.model.2.0.model.1.model.1.bias : ignored
+decoders.2.level_blocks.1.model.2.0.model.1.model.3.weight : ignored
+decoders.2.level_blocks.1.model.2.0.model.1.model.3.bias : ignored
+decoders.2.level_blocks.1.model.2.0.model.2.model.1.weight : ignored
+decoders.2.level_blocks.1.model.2.0.model.2.model.1.bias : ignored
+decoders.2.level_blocks.1.model.2.0.model.2.model.3.weight : ignored
+decoders.2.level_blocks.1.model.2.0.model.2.model.3.bias : ignored
+decoders.2.level_blocks.1.model.2.0.model.3.model.1.weight : ignored
+decoders.2.level_blocks.1.model.2.0.model.3.model.1.bias : ignored
+decoders.2.level_blocks.1.model.2.0.model.3.model.3.weight : ignored
+decoders.2.level_blocks.1.model.2.0.model.3.model.3.bias : ignored
+decoders.2.level_blocks.1.model.2.1.weight : ignored
+decoders.2.level_blocks.1.model.2.1.bias : ignored
+decoders.2.level_blocks.2.model.0.weight : ignored
+decoders.2.level_blocks.2.model.0.bias : ignored
+decoders.2.level_blocks.2.model.1.0.model.0.model.1.weight : ignored
+decoders.2.level_blocks.2.model.1.0.model.0.model.1.bias : ignored
+decoders.2.level_blocks.2.model.1.0.model.0.model.3.weight : ignored
+decoders.2.level_blocks.2.model.1.0.model.0.model.3.bias : ignored
+decoders.2.level_blocks.2.model.1.0.model.1.model.1.weight : ignored
+decoders.2.level_blocks.2.model.1.0.model.1.model.1.bias : ignored
+decoders.2.level_blocks.2.model.1.0.model.1.model.3.weight : ignored
+decoders.2.level_blocks.2.model.1.0.model.1.model.3.bias : ignored
+decoders.2.level_blocks.2.model.1.0.model.2.model.1.weight : ignored
+decoders.2.level_blocks.2.model.1.0.model.2.model.1.bias : ignored
+decoders.2.level_blocks.2.model.1.0.model.2.model.3.weight : ignored
+decoders.2.level_blocks.2.model.1.0.model.2.model.3.bias : ignored
+decoders.2.level_blocks.2.model.1.0.model.3.model.1.weight : ignored
+decoders.2.level_blocks.2.model.1.0.model.3.model.1.bias : ignored
+decoders.2.level_blocks.2.model.1.0.model.3.model.3.weight : ignored
+decoders.2.level_blocks.2.model.1.0.model.3.model.3.bias : ignored
+decoders.2.level_blocks.2.model.1.1.weight : ignored
+decoders.2.level_blocks.2.model.1.1.bias : ignored
+decoders.2.level_blocks.2.model.2.0.model.0.model.1.weight : ignored
+decoders.2.level_blocks.2.model.2.0.model.0.model.1.bias : ignored
+decoders.2.level_blocks.2.model.2.0.model.0.model.3.weight : ignored
+decoders.2.level_blocks.2.model.2.0.model.0.model.3.bias : ignored
+decoders.2.level_blocks.2.model.2.0.model.1.model.1.weight : ignored
+decoders.2.level_blocks.2.model.2.0.model.1.model.1.bias : ignored
+decoders.2.level_blocks.2.model.2.0.model.1.model.3.weight : ignored
+decoders.2.level_blocks.2.model.2.0.model.1.model.3.bias : ignored
+decoders.2.level_blocks.2.model.2.0.model.2.model.1.weight : ignored
+decoders.2.level_blocks.2.model.2.0.model.2.model.1.bias : ignored
+decoders.2.level_blocks.2.model.2.0.model.2.model.3.weight : ignored
+decoders.2.level_blocks.2.model.2.0.model.2.model.3.bias : ignored
+decoders.2.level_blocks.2.model.2.0.model.3.model.1.weight : ignored
+decoders.2.level_blocks.2.model.2.0.model.3.model.1.bias : ignored
+decoders.2.level_blocks.2.model.2.0.model.3.model.3.weight : ignored
+decoders.2.level_blocks.2.model.2.0.model.3.model.3.bias : ignored
+decoders.2.level_blocks.2.model.2.1.weight : ignored
+decoders.2.level_blocks.2.model.2.1.bias : ignored
+decoders.2.out.weight : ignored
+decoders.2.out.bias : ignored
+bottleneck.level_blocks.0.k : ignored
+bottleneck.level_blocks.1.k : ignored
+bottleneck.level_blocks.2.k : ignored
+0: Loading vqvae in train mode
+Parameters Encoder:441856
+Restored from /common/home/projectgrps/IS460/IS460G4/unmix/logs/vqvae_drums_b4/checkpoint_step_1.pth.tar
+encoders.0.level_blocks.0.model.0.0.weight : loaded
+encoders.0.level_blocks.0.model.0.0.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.0.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.0.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.0.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.0.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.1.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.1.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.1.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.1.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.2.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.2.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.2.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.2.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.3.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.3.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.3.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.3.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.4.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.4.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.4.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.4.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.5.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.5.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.5.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.5.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.6.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.6.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.6.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.6.model.3.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.7.model.1.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.7.model.1.bias : loaded
+encoders.0.level_blocks.0.model.0.1.model.7.model.3.weight : loaded
+encoders.0.level_blocks.0.model.0.1.model.7.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.0.weight : loaded
+encoders.0.level_blocks.0.model.1.0.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.0.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.0.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.0.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.0.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.1.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.1.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.1.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.1.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.2.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.2.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.2.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.2.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.3.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.3.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.3.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.3.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.4.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.4.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.4.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.4.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.5.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.5.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.5.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.5.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.6.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.6.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.6.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.6.model.3.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.7.model.1.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.7.model.1.bias : loaded
+encoders.0.level_blocks.0.model.1.1.model.7.model.3.weight : loaded
+encoders.0.level_blocks.0.model.1.1.model.7.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.0.weight : loaded
+encoders.0.level_blocks.0.model.2.0.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.0.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.0.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.0.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.0.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.1.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.1.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.1.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.1.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.2.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.2.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.2.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.2.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.3.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.3.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.3.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.3.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.4.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.4.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.4.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.4.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.5.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.5.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.5.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.5.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.6.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.6.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.6.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.6.model.3.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.7.model.1.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.7.model.1.bias : loaded
+encoders.0.level_blocks.0.model.2.1.model.7.model.3.weight : loaded
+encoders.0.level_blocks.0.model.2.1.model.7.model.3.bias : loaded
+encoders.0.level_blocks.0.model.3.weight : loaded
+encoders.0.level_blocks.0.model.3.bias : loaded
+decoders.0.level_blocks.0.model.0.weight : ignored
+decoders.0.level_blocks.0.model.0.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.0.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.0.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.0.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.0.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.1.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.1.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.1.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.1.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.2.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.2.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.2.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.2.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.3.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.3.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.3.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.3.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.4.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.4.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.4.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.4.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.5.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.5.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.5.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.5.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.6.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.6.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.6.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.6.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.7.model.1.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.7.model.1.bias : ignored
+decoders.0.level_blocks.0.model.1.0.model.7.model.3.weight : ignored
+decoders.0.level_blocks.0.model.1.0.model.7.model.3.bias : ignored
+decoders.0.level_blocks.0.model.1.1.weight : ignored
+decoders.0.level_blocks.0.model.1.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.0.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.0.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.0.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.0.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.1.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.1.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.1.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.1.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.2.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.2.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.2.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.2.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.3.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.3.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.3.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.3.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.4.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.4.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.4.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.4.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.5.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.5.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.5.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.5.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.6.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.6.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.6.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.6.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.7.model.1.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.7.model.1.bias : ignored
+decoders.0.level_blocks.0.model.2.0.model.7.model.3.weight : ignored
+decoders.0.level_blocks.0.model.2.0.model.7.model.3.bias : ignored
+decoders.0.level_blocks.0.model.2.1.weight : ignored
+decoders.0.level_blocks.0.model.2.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.0.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.0.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.0.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.0.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.1.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.1.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.1.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.1.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.2.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.2.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.2.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.2.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.3.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.3.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.3.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.3.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.4.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.4.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.4.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.4.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.5.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.5.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.5.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.5.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.6.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.6.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.6.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.6.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.7.model.1.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.7.model.1.bias : ignored
+decoders.0.level_blocks.0.model.3.0.model.7.model.3.weight : ignored
+decoders.0.level_blocks.0.model.3.0.model.7.model.3.bias : ignored
+decoders.0.level_blocks.0.model.3.1.weight : ignored
+decoders.0.level_blocks.0.model.3.1.bias : ignored
+decoders.0.out.weight : ignored
+decoders.0.out.bias : ignored
+bottleneck.level_blocks.0.k : ignored
+Number of gpus:
+1
+Number of gpus:
+1
+Logging to logs/encoder_drums__b4
+Epoch:  -1 / 10
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+0/4 [00:00<?, ?it/s]Logging train inputs/ouputs
+1/4 [00:02<00:07,  2.46s/it]2/4 [00:02<00:03,  1.82s/it]3/4 [00:03<00:01,  1.36s/it]4/4 [00:03<00:00,  1.04s/it]4/4 [00:03<00:00,  1.18it/s]
+Train recons_loss_l1: 136.0083 recons_loss: 136.0083 l2_loss: 91.0107 l1_loss: 6.6106 linf_loss: 2249.8768 loss: 136.0083 gn: 460.7723 lr: 0.0000 lg_loss_scale: 0.0000 epoch: -1.0000
+Epoch:  0 / 10
+/common/home/projectgrps/IS460/IS460G4/miniconda3/envs/unmix/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+/common/home/projectgrps/IS460/IS460G4/unmix/unmix_encoder/utils/ema.py:78: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at  /opt/conda/conda-bld/pytorch_1640811792565/work/torch/csrc/utils/python_arg_parser.cpp:1050.)
+  self.state[group].mul_(self.mu).add_(1 - self.mu, self.get_model_state(group))
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+0/4 [00:00<?, ?it/s]1/4 [00:01<00:04,  1.52s/it]2/4 [00:01<00:02,  1.15s/it]3/4 [00:02<00:00,  1.13it/s]4/4 [00:02<00:00,  1.41it/s]4/4 [00:02<00:00,  1.66it/s]
+Train recons_loss_l1: 133.6981 recons_loss: 133.6981 l2_loss: 88.6418 l1_loss: 6.4794 linf_loss: 2252.8155 loss: 133.6981 gn: 444.6078 lr: 0.0000 lg_loss_scale: 0.0000 epoch: 0.0000
+Epoch:  1 / 10
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+0/4 [00:00<?, ?it/s]1/4 [00:01<00:04,  1.53s/it]2/4 [00:01<00:02,  1.16s/it]3/4 [00:02<00:00,  1.11it/s]4/4 [00:02<00:00,  1.40it/s]4/4 [00:02<00:00,  1.63it/s]
+Train recons_loss_l1: 107.8111 recons_loss: 107.8111 l2_loss: 72.0040 l1_loss: 5.8408 linf_loss: 1790.3572 loss: 107.8111 gn: 348.7982 lr: 0.0000 lg_loss_scale: 0.0000 epoch: 1.0000
+Epoch:  2 / 10
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+0/4 [00:00<?, ?it/s]1/4 [00:01<00:04,  1.42s/it]2/4 [00:01<00:02,  1.08s/it]3/4 [00:01<00:00,  1.19it/s]4/4 [00:02<00:00,  1.49it/s]4/4 [00:02<00:00,  1.73it/s]
+Train recons_loss_l1: 128.7903 recons_loss: 128.7903 l2_loss: 85.6716 l1_loss: 6.5891 linf_loss: 2155.9333 loss: 128.7903 gn: 371.6763 lr: 0.0000 lg_loss_scale: 0.0000 epoch: 2.0000
+Epoch:  3 / 10
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+0/4 [00:00<?, ?it/s]1/4 [00:01<00:04,  1.51s/it]2/4 [00:01<00:02,  1.14s/it]3/4 [00:02<00:00,  1.14it/s]4/4 [00:02<00:00,  1.43it/s]4/4 [00:02<00:00,  1.67it/s]
+Train recons_loss_l1: 116.7521 recons_loss: 116.7521 l2_loss: 78.3283 l1_loss: 6.0970 linf_loss: 1921.1885 loss: 116.7521 gn: 398.7676 lr: 0.0000 lg_loss_scale: 0.0000 epoch: 3.0000
+Epoch:  4 / 10
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+0/4 [00:00<?, ?it/s]1/4 [00:01<00:05,  1.70s/it]2/4 [00:01<00:02,  1.28s/it]3/4 [00:02<00:00,  1.02it/s]4/4 [00:02<00:00,  1.30it/s]4/4 [00:02<00:00,  1.54it/s]
+Train recons_loss_l1: 109.7486 recons_loss: 109.7486 l2_loss: 73.3362 l1_loss: 5.8827 linf_loss: 1820.6195 loss: 109.7486 gn: 339.6564 lr: 0.0000 lg_loss_scale: 0.0000 epoch: 4.0000
+Epoch:  5 / 10
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+0/4 [00:00<?, ?it/s]1/4 [00:01<00:03,  1.31s/it]2/4 [00:01<00:01,  1.00it/s]3/4 [00:01<00:00,  1.27it/s]4/4 [00:02<00:00,  1.58it/s]4/4 [00:02<00:00,  1.81it/s]
+Train recons_loss_l1: 79.6714 recons_loss: 79.6714 l2_loss: 52.4661 l1_loss: 4.8797 linf_loss: 1360.2675 loss: 79.6714 gn: 258.6148 lr: 0.0000 lg_loss_scale: 0.0000 epoch: 5.0000
+Epoch:  6 / 10
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+0/4 [00:00<?, ?it/s]1/4 [00:01<00:03,  1.32s/it]2/4 [00:01<00:02,  1.01s/it]3/4 [00:01<00:00,  1.26it/s]4/4 [00:02<00:00,  1.56it/s]4/4 [00:02<00:00,  1.80it/s]
+Train recons_loss_l1: 70.9573 recons_loss: 70.9573 l2_loss: 47.2442 l1_loss: 4.6362 linf_loss: 1185.6575 loss: 70.9573 gn: 240.7350 lr: 0.0000 lg_loss_scale: 0.0000 epoch: 6.0000
+Epoch:  7 / 10
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+0/4 [00:00<?, ?it/s]1/4 [00:01<00:04,  1.54s/it]2/4 [00:01<00:02,  1.16s/it]3/4 [00:02<00:00,  1.12it/s]4/4 [00:02<00:00,  1.41it/s]4/4 [00:02<00:00,  1.65it/s]
+Train recons_loss_l1: 77.9711 recons_loss: 77.9711 l2_loss: 51.8688 l1_loss: 5.0766 linf_loss: 1305.1154 loss: 77.9711 gn: 267.1483 lr: 0.0001 lg_loss_scale: 0.0000 epoch: 7.0000
+Epoch:  8 / 10
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+0/4 [00:00<?, ?it/s]1/4 [00:01<00:04,  1.43s/it]2/4 [00:01<00:02,  1.09s/it]3/4 [00:01<00:00,  1.18it/s]4/4 [00:02<00:00,  1.48it/s]4/4 [00:02<00:00,  1.72it/s]
+Train recons_loss_l1: 73.7774 recons_loss: 73.7774 l2_loss: 48.1975 l1_loss: 4.8733 linf_loss: 1278.9933 loss: 73.7774 gn: 296.2388 lr: 0.0001 lg_loss_scale: 0.0000 epoch: 8.0000
+Epoch:  9 / 10
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+Estimating duration from bitrate, this may be inaccurate
+0/4 [00:00<?, ?it/s]1/4 [00:01<00:04,  1.49s/it]2/4 [00:01<00:02,  1.12s/it]3/4 [00:02<00:00,  1.15it/s]4/4 [00:02<00:00,  1.44it/s]4/4 [00:02<00:00,  1.68it/s]
+Train recons_loss_l1: 43.7896 recons_loss: 43.7896 l2_loss: 28.8332 l1_loss: 3.6019 linf_loss: 747.8197 loss: 43.7896 gn: 242.2526 lr: 0.0001 lg_loss_scale: 0.0000 epoch: 9.0000
+Job ID: 30564
+Cluster: crimson
+User/Group: IS460G4/IS460G4
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:01:21
+CPU Efficiency: 49.39% of 00:02:44 core-walltime
+Job Wall-clock time: 00:00:41
+Memory Utilized: 11.33 GB
+Memory Efficiency: 70.80% of 16.00 GB
