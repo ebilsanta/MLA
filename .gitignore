@@ -5,4 +5,5 @@
 /datasets/cantoria/CantoriaDataset_v1.0.0
 /datasets/combined_processed_dataset
 /datasets/combined_processed_dataset_converted_stereo
+/inference_results
 __pycache__/

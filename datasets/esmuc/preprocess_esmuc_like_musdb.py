@@ -77,11 +77,11 @@ def group_audios(input_dir, output_dir):
 def get_modified_filename(source_filename):
     output_mapping = {
         "Bass": "bass",
-        "Tenor": "tenor",
-        "Alto": "alto",
-        "Soprano": "soprano"
+        "Tenor": "vocals",
+        "Alto": "drums",
+        "Soprano": "other"
     }
-    parts = source_filename.split(".")[0].split('/') # need to change to '\\' for windows
+    parts = source_filename.split(".")[0].split('\\') # need to change to '\\' for windows
     voice_type = parts[-2]
     modified_name = output_mapping[voice_type] 
     return modified_name

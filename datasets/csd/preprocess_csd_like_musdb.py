@@ -9,11 +9,11 @@ from utils import copy_non_wav_files, group_audios
 def get_modified_filename(source_filename):
     output_mapping = {
         "bass": "bass",
-        "tenor": "tenor",
-        "alto": "alto",
-        "soprano": "soprano"
+        "tenor": "vocals",
+        "alto": "drums",
+        "soprano": "other"
     }
-    parts = source_filename.split('/') # need to change to '\\' for windows
+    parts = source_filename.split('\\') # need to change to '\\' for windows
     voice_type = parts[-2]
     modified_name = output_mapping[voice_type] 
     return modified_name + ".wav"
