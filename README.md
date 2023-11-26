@@ -16,5 +16,14 @@ After the datasets are download, follow these steps in order:
 Since the 3 models are very different from each other, we have put them individually inside their respective directories in ```models/model```. Inside each directory, please follow the respective README.md
 
 ## Results
-1. [ add SDR table here ]
-2. Some sample inferece outputs from our models can be seen in the drive: https://smu-my.sharepoint.com/:f:/g/personal/kevano_2020_business_smu_edu_sg/Ek2286izPx5Lkbew-vrgjUEBGDwSNMoahMWTMByRZ9-tzA?e=qj7A4L
+1. Our models achieved the following Source-to-Distortion Ratio (SDR) results:
+
+|             | Soprano |  Alto |  Tenor |  Bass | Average |
+|-------------|---------|-------|--------|-------|---------|
+| SOTA*       |   1.67  | 10.70 |  -7.13 |  7.42 |   2.88  |
+| Open-Unmix  |   4.68  |  3.12 |   2.13 |  1.74 |   2.92  |
+| BSRNN       |   2.16  |  3.12 |   2.86 |  3.21 |   2.84  |
+
+\* P. Chandna, H. Cuesta, D. Petermann, and E. Gómez, “A Deep-Learning Based Framework for Source Separation, Analysis, and Synthesis of Choral Ensembles,” Front. Signal Process., vol. 2, p. 808594, Apr. 2022, doi: 10.3389/frsip.2022.808594.
+
+2. Check out some samples of our models' inferences on 4 choir songs: https://smu-my.sharepoint.com/:f:/g/personal/kevano_2020_business_smu_edu_sg/Ek2286izPx5Lkbew-vrgjUEBGDwSNMoahMWTMByRZ9-tzA?e=qj7A4L
