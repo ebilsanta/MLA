@@ -1,9 +1,9 @@
 # Steps to generate dataset similar to MUSDB18-HQ from Choral Singing Dataset
 
-* Download and unzip Esmuc Choir Dataset and add the folder to this directory  
+* Download and unzip Choral Singing Dataset and add the folder to this directory  
 for eg.
 ```
-/datasets/esmuc/ChoralSingingDataset
+/datasets/csd/ChoralSingingDataset
 ```
 
 * Install dependencies
