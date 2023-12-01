@@ -7,3 +7,4 @@
 /datasets/combined_processed_dataset_converted_stereo
 /inference_results
 __pycache__/
+.DS_Store
